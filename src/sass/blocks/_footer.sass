@@ -1,0 +1,113 @@
+.footer
+  padding: 50px 0 15px
+  background-color: #efefef
+  &__title
+    margin: 0 0 25px
+    font-size: 20px
+    +med
+    text-align: center
+  &-menu__item
+    margin-bottom: 20px
+    font-size: 24px
+    +bold
+    &:last-child
+      margin-bottom: 0
+    a
+      color: $black
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .socials
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    max-width: 455px
+    .block
+      margin-bottom: 10px
+      padding-left: 12px
+      width: 100%
+      max-width: 215px
+      height: 50px
+      display: flex
+      align-items: center
+      border-radius: 9px
+      +semibold
+      color: $white
+      box-shadow: 0px 4px 10px rgba(0,0,0,.13)
+      &-whatsapp
+        background-color: #46cb7b
+      &-instagram
+        background: url('//bossclean.ru/wp-content/themes/bossclean/css/../img/inst_bg.png') center/cover no-repeat
+        .icon
+          margin-top: 5px
+      &-telegram
+        background-color: #139BD0
+      &-facebook
+        background-color: #3B5998
+      &-vk
+        background-color: #537599
+      .whatsapp
+        max-width: 30px
+        max-height: 30px
+      .instagram
+        max-width: 24px
+        max-height: 24px
+      .telegram
+        max-width: 21px
+        max-height: 17px
+      .facebook
+        max-width: 12px
+        max-height: 22px
+        &-background
+          max-width: 26px
+          padding: 4px 8px 0 7px
+          background-color: #4266B3
+          border-radius: 3px
+      .vk
+        max-width: 20px
+        max-height: 12px
+      .phone
+        max-width: 14px
+        max-height: 14px
+      .icon
+        flex-basis: 60px
+      &-phone
+          background-color: $white
+          .icon
+            margin-top: 5px
+            flex-basis: 30px
+          .name
+            color: #4D4D4D
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13)
+            font-size: 16px
+            +med
+  &-logo
+    display: flex
+    flex-direction: column
+    .logo
+      margin-bottom: 20px
+      max-width: 250px
+      max-height: 29px
+    span
+      max-width: 250px
+      display: inline-block
+      font-size: 16px
+      line-height: 20px
+      +med
+  &-descr
+    max-width: 375px
+    margin: auto
+    text-align: center
+    font-size: 14px
+    +med
+    color: #b4b4b4
+    .grey
+      color: #666
+    a
+      color: #6146EE
+    .bot-part
+      margin-top: 20px
+      font-size: 15px
+      +semibold

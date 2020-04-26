@@ -1,0 +1,24 @@
+$black: #000
+$white: #fff
+$red: #ee6b59
+$grey: #999
+$normal: 0.3s
+$dark: #232323
+$footer-dark: #383838
+$tablet: 1023px
+$mobile: 767px
+$laptop: 1200px
+$se: 460px
+
+@mixin laptop
+  @media (max-width: $laptop)
+    @content
+@mixin tablet
+  @media (max-width: $tablet)
+    @content
+@mixin mobile
+  @media (max-width: $mobile)
+    @content
+@mixin se
+  @media (max-width: $se)
+    @content

@@ -1,0 +1,49 @@
+.navbar
+  padding: 40px 0
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__logo
+    display: flex
+    flex-direction: column
+    .logo
+      margin-bottom: 6px
+      max-width: 280px
+      max-height: 33px
+    span
+      font-size: 12px
+      +semibold
+  &-menu
+    width: 100%
+    max-width: 730px
+    display: flex
+    justify-content: space-between
+    a
+      font-size: 11px
+      +bold
+      color: $black
+  &-profile
+    display: flex
+    align-items: center
+    .user
+      max-width: 11px
+      max-height: 16px
+      &-icon
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF)
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(97, 70, 238, 0.13)
+        transition: $normal
+        &:hover
+          transform: scale(1.2);
+    &__text
+      display: inline-block
+      margin-right: 15px
+      font-size: 13px
+      +med
+      color: $grey

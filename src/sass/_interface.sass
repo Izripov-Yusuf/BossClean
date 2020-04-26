@@ -1,0 +1,71 @@
+*
+  box-sizing: border-box
+@media (min-width: 1200px)
+  .button
+    transition: $normal
+    &:hover
+      cursor: pointer
+      opacity: 0.7
+  a
+    transition: $normal
+    &:hover
+      opacity: 0.7
+  .submit
+    transition: $normal
+    &:hover
+      opacity: 0.7
+
+a
+  text-decoration: none
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+ol
+  margin: 0
+  padding: 0
+  list-style-position: inside
+body
+  margin: 0
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  +reg
+main
+  position: relative
+  flex-grow: 1
+#content
+  flex-grow: 2
+footer
+  flex-shrink: 0
+img
+  width: 100%
+  object-fit: cover
+h1, h2, h3, h4, h5, h6, p
+  margin: 0
+.container
+  width: 100%
+  max-width: 1280px
+  margin: auto
+.button
+  background: transparent
+  border: none
+  outline: none
+  margin: 0
+  padding: 0
+.input
+  border-radius: 5px
+  border: none
+  font-size: 13px
+  &:focus
+    outline: 0
+input::placeholder
+  color: #e1e1e1
+.swiper-pagination-bullet
+  background-color: #c4c4c4
+  opacity: 1
+  @include mobile
+    width: 4px
+    height: 4px
+.swiper-pagination-bullet-active
+  background-color: $black
