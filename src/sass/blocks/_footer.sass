@@ -1,15 +1,24 @@
 .footer
   padding: 50px 0 15px
   background-color: #efefef
+  @include mobile-landscape
+      padding: 30px 0 20px
+  &-menu
+    @include mobile-landscape
+      display: none
   &__title
     margin: 0 0 25px
     font-size: 20px
     +med
     text-align: center
+    @include mobile-landscape
+      margin-bottom: 30px
   &-menu__item
     margin-bottom: 20px
     font-size: 24px
     +bold
+    @include tablet
+      font-size: 18px
     &:last-child
       margin-bottom: 0
     a
@@ -18,12 +27,22 @@
     display: flex
     align-items: center
     justify-content: space-between
+    @include mobile-landscape
+      flex-direction: column
   .socials
     display: flex
     justify-content: space-between
     flex-wrap: wrap
     width: 100%
     max-width: 455px
+    @include tablet
+      margin: 0 15px
+      max-width: 400px
+    @include mobile-landscape
+      margin: 0
+      margin-bottom: 40px
+      flex-direction: column
+      align-items: center
     .block
       margin-bottom: 10px
       padding-left: 12px
@@ -36,6 +55,10 @@
       +semibold
       color: $white
       box-shadow: 0px 4px 10px rgba(0,0,0,.13)
+      @include tablet
+        max-width: 185px
+      @include mobile-landscape
+        max-width: 345px
       &-whatsapp
         background-color: #46cb7b
       &-instagram
@@ -73,11 +96,19 @@
         max-height: 14px
       .icon
         flex-basis: 60px
+        @include tablet
+          flex-basis: 50px
+        @include mobile-landscape
+          flex-basis: 35%
       &-phone
           background-color: $white
           .icon
             margin-top: 5px
             flex-basis: 30px
+            @include tablet
+              flex-basis: 22px
+            @include mobile-landscape
+              flex-basis: 32%
           .name
             color: #4D4D4D
             text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13)
@@ -86,10 +117,16 @@
   &-logo
     display: flex
     flex-direction: column
+    @include mobile-landscape
+      display: none
     .logo
       margin-bottom: 20px
       max-width: 250px
       max-height: 29px
+      @include tablet
+        margin-bottom: 10px
+        max-width: 230px
+        max-height: 27px
     span
       max-width: 250px
       display: inline-block
@@ -111,3 +148,10 @@
       margin-top: 20px
       font-size: 15px
       +semibold
+      @include mobile-landscape
+        margin-top: 30px
+    .top-part
+      font-size: 14px
+      line-height: 128%
+      @include mobile-landscape
+        font-size: 16px

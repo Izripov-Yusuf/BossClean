@@ -2,12 +2,14 @@ $black: #000
 $white: #fff
 $red: #ee6b59
 $grey: #999
+$purple: #6146ee
 $normal: 0.3s
 $dark: #232323
 $footer-dark: #383838
-$tablet: 1023px
-$mobile: 767px
 $laptop: 1200px
+$tablet: 1023px
+$mobile-landscape: 767px
+$mobile: 570px
 $se: 460px
 
 @mixin laptop
@@ -15,6 +17,9 @@ $se: 460px
     @content
 @mixin tablet
   @media (max-width: $tablet)
+    @content
+@mixin mobile-landscape
+  @media (max-width: $mobile-landscape)
     @content
 @mixin mobile
   @media (max-width: $mobile)

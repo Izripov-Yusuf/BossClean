@@ -11,14 +11,26 @@
       margin-bottom: 6px
       max-width: 280px
       max-height: 33px
+      @include laptop
+        max-width: 230px
+        max-height: 27px
+      @include mobile-landscape
+        max-width: 153px
+        max-height: 18px
     span
       font-size: 12px
       +semibold
+      @include mobile-landscape
+        font-size: 9px
   &-menu
     width: 100%
     max-width: 730px
     display: flex
     justify-content: space-between
+    @include laptop
+      max-width: 570px
+    @include tablet
+      display: none
     a
       font-size: 11px
       +bold
@@ -26,6 +38,8 @@
   &-profile
     display: flex
     align-items: center
+    @include tablet
+      display: none
     .user
       max-width: 11px
       max-height: 16px
@@ -47,3 +61,37 @@
       font-size: 13px
       +med
       color: $grey
+  &-burger
+    display: none
+    @include tablet
+      margin-bottom: 6px
+      display: flex
+      padding: 10px 0
+      position: relative
+      width: 24px
+      .burger
+        position: absolute
+        width: 24px
+        height: 4px
+        background-color: $purple
+        &:before, &:after
+          display: block
+          content: ''
+          position: absolute
+          top: 50%
+          margin-top: -2px
+          width: 24px
+          height: 4px
+          transition: 0.5s
+          background-color: $purple
+        &:before
+          transform: translateY(-8px)
+        &:after
+          transform: translateY(8px)
+    &-active
+      .burger
+        height: 0
+        &:before
+          transform: rotate(495deg)
+        &:after
+          transform: rotate(-495deg)
