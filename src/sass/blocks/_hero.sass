@@ -1,0 +1,60 @@
+.hero
+  &-section
+    @include mobile-landscape
+      display: none
+    &-mobile
+      display: none
+      @include mobile-landscape
+        display: block
+      .hero-pagination
+        left: 50%
+        transform: translateX(-50%)
+        width: 100%
+        .swiper-pagination-bullet
+          margin-right: 15px
+          width: 75px
+          height: 9px
+          background: #e6e6e6
+          border-radius: 3px
+          &-active
+            background: #7e7e7e
+
+  &-wrap
+    position: relative
+  &-button
+    position: absolute
+    bottom: 75px
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    max-width: 215px
+    padding: 15px 0
+    background-color: $purple
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(7, 255, 255, 0.12), 0px 10px 20px rgba(7, 255, 255, 0.18)
+    border-radius: 8px
+    color: $white
+    font-size: 15px
+    +bold
+    line-height: 18px
+    @include tablet
+      bottom: 30px
+  &-slide
+    padding: 15px 15px 25px 15px
+    background-color: $black
+    &__text
+      display: inline-block
+      text-align: center
+      font-size: 58px
+      line-height: 92%
+      color: $white
+      +semibold
+    &__button
+      margin: 0 auto
+      margin-top: 50px
+      padding: 10px 0
+      width: 100%
+      background-color: $purple
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(7, 253, 253, 0.12), 0px 16px 24px rgba(7, 253, 253, 0.2)
+      border-radius: 3px
+      color: $white
+      +semibold

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bossclean</title>
+  <!-- <link rel="stylesheet" href="css/materialize.css"> -->
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -75,7 +77,196 @@
     </div>
   </nav>
   <!-- /.navbar -->
-  <main></main>
+  <nav class="navbar-fixed" id="navbar-fixed-js">
+    <div class="container">
+      <div class="navbar-fixed-block">
+        <div class="navbar__logo">
+          <a href="#" class="icon-logo">
+            <svg class="logo">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <span>ПРОФЕССИОНАЛЬНЫЙ ОБУВНОЙ СЕРВИС</span>
+        </div>
+        <!-- /.navbar__logo -->
+        <div class="navbar-burger">
+          <span class="burger"></span>
+        </div>
+        <!-- /.navbar-burger -->
+      </div>
+      <!-- /.navbar-fixed-block -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.navbar-fixed -->
+  <nav class="navbar-mobile">
+    <div class="navbar-mobile-top">
+      <div class="navbar-profile">
+        <span class="navbar-profile__text">Профиль</span>
+        <a href="#" class="user-icon" id="user-icon">
+          <svg class="user">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- /.navbar-profile -->
+      <div class="navbar-mobile-close">×</div>
+    </div>
+    <!-- /.navbar-mobile-top -->
+    <ul class="navbar-menu">
+      <li>
+        <a href="#">КОНТАКТЫ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">БЛОГ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">ВЫЗОВ КУРЬЕРА</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">ДО/ПОСЛЕ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">УСЛУГИ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">МАГАЗИН</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- /.navbar-menu -->
+    <div class="navbar-menu__title">Мы всегда на связи</div>
+    <div class="socials">
+      <a href="https://api.whatsapp.com/send?phone=79672441718&amp;text=&amp;source=&amp;data=" class="block block-whatsapp"
+        target="_blank">
+        <div class="icon">
+          <svg class="whatsapp">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </div>
+        <div class="name">WhatsApp</div>
+      </a>
+      <a href="https://www.instagram.com/bossclean.ru/" class="block block-instagram" target="_blank">
+        <div class="icon">
+          <svg class="instagram">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </div>
+        <div class="name">Instagram</div>
+      </a>
+      <a href="https://teleg.run/bossclean" class="block block-telegram" target="_blank">
+        <div class="icon">
+          <svg class="telegram">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </div>
+        <div class="name">Telegram</div>
+      </a>
+      <a href="https://www.facebook.com/bosscleanru/" class="block block-facebook" target="_blank">
+        <div class="icon">
+          <div class="facebook-background">
+            <svg class="facebook">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="name">Facebook</div>
+      </a>
+      <a href="https://vk.com/bossclean" class="block block-vk" target="_blank">
+        <div class="icon">
+          <svg class="vk">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </div>
+        <div class="name">Вконтакте</div>
+      </a>
+      <a href="tel:84950057763" class="block block-phone" target="_blank">
+        <div class="icon">
+          <svg class="phone">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </div>
+        <div class="name">8(495)005-77-63</div>
+      </a>
+    </div>
+    <!-- /.socials -->
+  </nav>
+  <!-- /.navbar-mobile -->
+  <main>
+
+    <section class="section hero-section">
+      <div class="container">
+        <div class="hero-wrap">
+          <picture>
+            <img src="./img/hero/hero.jpg" srcset="./img/hero/hero@2x.jpg" alt="Фото">
+          </picture>
+          <button class="button hero-button">КНОПКА</button>
+        </div>
+        <!-- /.hero-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section hero-section -->
+    <section class="section hero-section-mobile">
+      <div class="container">
+        <div class="swiper-container" id="hero-section-slider">
+          <div class="swiper-wrapper hero-wrapper">
+            <div class="swiper-slide hero-slide">
+              <span class="hero-slide__text">БАННЕР БАННЕР</span>
+              <picture>
+                <img src="" srcset="" alt="">
+              </picture>
+              <button class="button hero-slide__button">Попробовать</button>
+            </div>
+            <!-- /.swiper-slide hero-slide -->
+
+            <div class="swiper-slide hero-slide">
+              <span class="hero-slide__text">БАННЕР БАННЕР</span>
+              <picture>
+                <img src="" srcset="" alt="">
+              </picture>
+              <button class="button hero-slide__button">Попробовать</button>
+            </div>
+            <!-- /.swiper-slide hero-slide -->
+
+            <div class="swiper-slide hero-slide">
+              <span class="hero-slide__text">БАННЕР БАННЕР</span>
+              <picture>
+                <img src="" srcset="" alt="">
+              </picture>
+              <button class="button hero-slide__button">Попробовать</button>
+            </div>
+            <!-- /.swiper-slide hero-slide -->
+
+          </div>
+          <!-- /.swiper-wrapper hero-wrapper -->
+
+        </div>
+        <!-- /.swiper-container -->
+        <div class="swiper-pagination hero-pagination"></div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section hero-section-mobile -->
+
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -161,6 +352,9 @@
       <div class="bot-part">© 2020 BOSSCLEAN</div>
     </div>
   </footer>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="./js/materialize.js"></script> -->
+  <script src="./js/swiper.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
