@@ -39,6 +39,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SF UI Text BoldG1';
+  font-style: normal;
+  font-weight: normal;
+  src: local('../fonts/SFUIText/SF UI Text BoldG1'), url('../fonts/SFUIText/SFUIText-BoldG1.woff') format('woff');
+}
+
 @mixin reg {
   font-family: 'Montserrat Regular', sans-serif;
 }
@@ -53,4 +60,8 @@
 
 @mixin bold {
   font-family: 'Montserrat Bold', sans-serif;
+}
+
+@mixin price-bold {
+  font-family: 'SF UI Text BoldG1', sans-serif;
 }

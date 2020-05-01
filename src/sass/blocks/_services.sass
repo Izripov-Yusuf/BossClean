@@ -4,8 +4,9 @@
     @include mobile-landscape
     padding-top: 55px
     .container
-      padding: 0 15px 0 0
-      max-width: none
+      @include mobile-landscape
+        padding: 0 15px 0 0
+        max-width: none
     &__title
       font-size: 43px
       line-height: 100%
@@ -22,9 +23,11 @@
     padding: 55px 0 60px
     display: flex
     flex-wrap: wrap
-    justify-content: center
+    @include laptop
+      justify-content: center
     @include mobile-landscape
       flex-direction: column
+      padding-bottom: 30px
   &-item
     max-width: 305px
     margin: 0 15px 50px 0
@@ -35,6 +38,8 @@
     @include mobile-landscape
       margin: 0
       margin-bottom: 60px
+      &:last-child
+        margin-bottom: 0
       max-width: none
     &:last-child
       margin-right: 0

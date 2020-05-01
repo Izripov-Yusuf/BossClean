@@ -1,0 +1,96 @@
+.about
+  &-section
+    &__title
+      margin-bottom: 80px
+      font-size: 43px
+      text-align: center
+      +semibold
+      letter-spacing: 0.01em
+      text-transform: uppercase
+      @include mobile-landscape
+        display: none
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-text
+    @include laptop
+      margin-right: 20px
+    &__subtitle
+      margin-bottom: 50px
+      font-size: 43px
+      +med
+      @include mobile-landscape
+      margin-bottom: 20px
+      font-size: 28px
+    &-wrap
+      margin-bottom: 10px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 520px
+      background: #fafafa
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      border-radius: 5px
+      &:last-shild
+        margin-bottom: 10px
+      @include tablet
+        max-width: 350px
+      @include mobile-landscape
+        max-width: none
+    &__descr
+      padding: 20px 0 20px 20px
+      flex: 0 66%
+      font-size: 22px
+      line-height: 112%
+      @include mobile
+        padding-left: 10px
+        font-size: 16px
+  &-sneaker
+    margin-right: 10px
+    width: 63px
+    max-height: 36px
+  &-delivery
+    margin-right: 20px
+    width: 45px
+    height: 51px
+  &-surface
+    margin-right: 15px
+    width: 42px
+    height: 50px
+  &-chemistry
+    margin-right: 20px
+    width: 34px
+    height: 49px
+  &-image
+    position: relative
+    @include mobile-landscape
+      display: none
+    img
+      max-width: 630px
+    &__title
+      position: absolute
+      top: 30px
+      left: 50px
+      max-width: 525px
+      line-height: 120%
+      color: $white
+      font-size: 38px
+      +med
+      @include tablet
+        font-size: 28px
+    &__button
+      position: absolute
+      top: 245px
+      left: 50px
+      width: 100%
+      max-width: 145px
+      padding: 12px 0
+      background-color: $purple
+      color: $white
+      font-size: 12px
+      +semibold
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(97, 70, 238, 0.12)
+      border-radius: 5px
+      @include tablet
+        top: 135px

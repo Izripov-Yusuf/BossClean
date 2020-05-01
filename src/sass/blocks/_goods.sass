@@ -1,0 +1,58 @@
+.goods
+  &-block
+    margin: 0 auto
+    padding: 115px 0 130px
+    max-width: 1172px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    @include tablet
+      justify-content: center
+    @include mobile-landscape
+      flex-direction: column
+      padding: 45px 0 60px
+  &-item
+    flex: 0 25%
+    margin-bottom: 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include tablet
+      margin-right: 35px
+      flex: none
+    @include mobile-landscape
+      margin-right: 0
+    .item
+      &-image
+        img
+          width: auto
+          height: 245px
+          @include tablet
+            height: 250px
+      &-description
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__title
+        margin: 20px 0
+        max-width: 140px
+        font-size: 18px
+        line-height: 95%
+        text-align: center
+      &__cost
+        margin-bottom: 45px
+        display: inline-block
+        font-size: 19px
+        +price-bold
+        letter-spacing: -0.045em
+      &__submit
+        padding: 17px 15px
+        background-color: $purple
+        border: none
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(7, 255, 255, 0.12), 0px 10px 20px rgba(7, 255, 255, 0.18)
+        border-radius: 8px
+        font-size: 13px
+        line-height: 16px
+        color: $white
+        +semibold
+        cursor: pointer

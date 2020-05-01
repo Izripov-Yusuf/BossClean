@@ -1,0 +1,110 @@
+.steps
+  &-section
+    padding: 110px 0 100px
+    &__title
+      margin-bottom: 60px
+      @include mobile-landscape
+        padding: 0 0 10px 30px
+        margin-right: 40px
+        text-align: left
+  &-wrap
+    display: flex
+    justify-content: space-between
+    @include laptop
+      flex-wrap: wrap
+      justify-content: start
+    @include tablet
+      justify-content: center
+    .step
+      position: relative
+      width: 100%
+      max-width: 305px
+      height: 440px
+      border-radius: 5px
+      transition: $normal
+      cursor: pointer
+      @include laptop
+        flex: 0 50%
+        margin-right: 15px
+        margin-bottom: 25px
+      @include mobile-landscape
+        flex: 0 44.5%
+        max-width: 165px
+        height: 330px
+      &:hover
+        transform: translateY(-4px)
+        &:nth-child(odd)
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(97, 70, 238, 0.42), 0px 10px 20px rgba(97, 70, 238, 0.48)
+        &:nth-child(even)
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 2px 6px rgba(0, 0, 0, 0.3), 0px 10px 20px rgba(97, 70, 238, 0.4)
+      &:nth-child(odd)
+        background-color: $purple
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(97, 70, 238, 0.12), 0px 10px 20px rgba(97, 70, 238, 0.18)
+        color: $white
+        .step__number
+          background-color: $white
+          color: $purple
+      &:nth-child(even)
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(97, 70, 238, 0.22)
+        .step__number
+          background-color: $purple
+          color: $white
+      &__number
+        position: absolute
+        top: 20px
+        left: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 34px
+        height: 34px
+        border-radius: 50%
+        font-size: 20px
+        @include mobile-landscape
+          top: 5px
+          left: 5px
+          width: 20px
+          height: 20px
+          font-size: 15px
+      img
+        margin: 40px auto 0
+        display: block
+        max-width: 170px
+        @include mobile-landscape
+          max-width: 125px
+      &:nth-child(4)
+        img
+          max-height: 110px
+          object-fit: contain
+      &:nth-child(3)
+        img
+          max-height: 110px
+          object-fit: contain
+      &__title
+        position: absolute
+        top: 180px
+        left: 50%
+        transform: translateX(-50%)
+        max-width: 185px
+        text-align: center
+        font-size: 28px
+        +bold
+        line-height: 100%
+        @include mobile-landscape
+          top: 165px
+          font-size: 18px
+          +med
+      &__descr
+        position: absolute
+        bottom: 60px
+        left: 15%
+        transform: translateX(-6%)
+        max-width: 245px
+        font-size: 22px
+        line-height: 27px
+        text-align: center
+        @include mobile-landscape
+          top: 200px
+          bottom: 0
+          font-size: 13px
+          line-height: 16px
