@@ -30,6 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   window.addEventListener('scroll', scrollFunction);
 
+  // Выезжающий экран с чистым кроссовком
+  const benefitAfter = document.querySelector('.benefit-after'),
+        benefitbefore = document.querySelector('.benefit-before'),
+        beforeArrow = document.querySelector('.benefit-before-arrow');
+  beforeArrow.addEventListener('click', () => {
+    benefitbefore.style.transform = 'translateX(-120%)';
+    benefitAfter.classList.add('benefit-after-active');
+  });
+
   // hero слайдер на мобильной версии
   const heroSectionMobile = document.querySelector('.hero-section-mobile');
 
@@ -42,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
           clickable: true,
         },
         autoplay: {
-          delay: 500000000,
+          delay: 5000,
           disableOnInteraction: false,
         },
     });

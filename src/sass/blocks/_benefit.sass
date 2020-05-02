@@ -1,0 +1,128 @@
+.benefit
+  &-section
+    padding: 150px 0 100px
+    display: flex
+    justify-content: center
+    overflow: hidden
+  &-before
+    margin: 0 auto
+    position: relative
+    display: flex
+    width: 100%
+    max-width: 1440px
+    transition: 0.5s
+    overflow: hidden
+    &-content
+      position: relative
+      width: 100%
+      max-width: 1270px
+      padding: 185px 0 425px 80px
+      background: #333
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      img
+        position: absolute
+        top: 140px
+        right: 140px
+        max-width: 880px
+    &-arrow
+      max-width: 170px
+      background: #f5f5f5
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      cursor: pointer
+      transition: $normal
+      &:hover
+        opacity: 0.8
+      &__title
+        margin: 215px 0 0 5px
+        font-size: 26px
+        +semibold
+        line-height: 100%
+      svg
+        margin: 30px 0 0 5px
+        max-width: 159px
+        max-height: 24px
+    &__title
+      position: absolute
+      top: 25px
+      left: 50%
+      transform: translateX(-50%)
+      padding: 25px 0
+      width: 100%
+      max-width: 1045px
+      background-color: $purple
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      border-radius: 3px
+      font-size: 43px
+      +semibold
+      text-align: center
+      color: $white
+      z-index: 1
+    &__subtitle
+      display: inline-block
+      font-size: 32px
+      color: $white
+      +semibold
+    &__new, &__cost
+      text-decoration: line-through
+    &__new
+      display: block
+      margin: 40px 0 10px
+      font-size: 26px
+      color: #dcdcdc
+    &__cost
+      font-size: 32px
+      color: #c25c4e
+  &-after
+    transform: translateX(80%)
+    height: 0
+    width: 0
+    transition: 0.5s transform
+    overflow: hidden
+    &-active
+      height: auto
+      transform: translateX(-91%)
+      width: 100%
+      max-width: 1440px
+      overflow: visible
+    &-content
+      margin: 0 auto
+      position: relative
+      padding: 150px 0 240px 100px
+      img
+        position: absolute
+        top: 145px
+        right: -310px
+        max-width: 920px
+    &__subtitle
+      display: inline-block
+      max-width: 335px
+      font-size: 32px
+      line-height: 100%
+    &__price
+      display: block
+      margin: 35px 0 10px
+      font-size: 26px
+      line-height: 100%
+    &__cost
+      font-size: 32px
+      +med
+    &__economy
+      display: block
+      margin: 20px 0 10px
+      font-size: 26px
+    &__difference
+      font-size: 32px
+      color: $purple
+      +med
+    &__button
+      display: block
+      margin-top: 45px
+      padding: 15px 0
+      width: 100%
+      max-width: 195px
+      background-color: $purple
+      color: $white
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(97, 70, 238, 0.12), 0px 10px 20px rgba(97, 70, 238, 0.18)
+      border-radius: 8px
+      +semibold
+      font-size: 15px
