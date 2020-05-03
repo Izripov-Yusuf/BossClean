@@ -4,6 +4,8 @@
     display: flex
     justify-content: center
     overflow: hidden
+    @include mobile-landscape
+      padding: 70px 0 50px
   &-before
     margin: 0 auto
     position: relative
@@ -12,6 +14,8 @@
     max-width: 1440px
     transition: 0.5s
     overflow: hidden
+    @include mobile-landscape
+      max-height: 510px
     &-content
       position: relative
       width: 100%
@@ -19,17 +23,25 @@
       padding: 185px 0 425px 80px
       background: #333
       box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      @include tablet
+        padding: 120px 0 300px 50px
       img
         position: absolute
         top: 140px
         right: 140px
         max-width: 880px
+        @include tablet
+          top: 155px
+          right: 50px
+          max-width: 520px
     &-arrow
       max-width: 170px
       background: #f5f5f5
       box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
       cursor: pointer
       transition: $normal
+      @include mobile-landscape
+        display: none
       &:hover
         opacity: 0.8
       &__title
@@ -57,6 +69,10 @@
       text-align: center
       color: $white
       z-index: 1
+      @include tablet
+        padding: 15px 0
+        max-width: 750px
+        font-size: 32px
     &__subtitle
       display: inline-block
       font-size: 32px
@@ -78,21 +94,32 @@
     width: 0
     transition: 0.5s transform
     overflow: hidden
+    @include mobile-landscape
+      transform: translateX(0%)
+      width: auto
+      max-height: 510px
     &-active
       height: auto
       transform: translateX(-91%)
       width: 100%
       max-width: 1440px
       overflow: visible
+      @include tablet
+        transform: translateX(-103%)
     &-content
       margin: 0 auto
       position: relative
       padding: 150px 0 240px 100px
+      @include tablet
+        padding: 100px 0 150px 60px
       img
         position: absolute
         top: 145px
         right: -310px
         max-width: 920px
+        @include tablet
+          right: 0
+          max-width: 460px
     &__subtitle
       display: inline-block
       max-width: 335px

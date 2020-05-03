@@ -56,6 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
   }
+
+  // benefit слайдер на мобильной версии
+  const benefitSliderSection = document.querySelector('.benefit-section'),
+        benefitSliderId = document.getElementById('benefit-slider');
+
+  if (window.innerWidth < 768) {
+    if (benefitSliderSection) {
+      new Swiper(benefitSliderId, {
+        direction: 'vertical',
+        slidesPerView: 1
+      });
+    }
+  }
 });
 
 /* document.addEventListener('DOMContentLoaded', function () {

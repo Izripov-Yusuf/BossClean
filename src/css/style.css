@@ -2471,6 +2471,12 @@ input::placeholder {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .benefit-section {
+    padding: 70px 0 50px;
+  }
+}
+
 .benefit-before {
   margin: 0 auto;
   position: relative;
@@ -2484,6 +2490,12 @@ input::placeholder {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .benefit-before {
+    max-height: 510px;
+  }
+}
+
 .benefit-before-content {
   position: relative;
   width: 100%;
@@ -2494,11 +2506,25 @@ input::placeholder {
           box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04);
 }
 
+@media (max-width: 1023px) {
+  .benefit-before-content {
+    padding: 120px 0 300px 50px;
+  }
+}
+
 .benefit-before-content img {
   position: absolute;
   top: 140px;
   right: 140px;
   max-width: 880px;
+}
+
+@media (max-width: 1023px) {
+  .benefit-before-content img {
+    top: 155px;
+    right: 50px;
+    max-width: 520px;
+  }
 }
 
 .benefit-before-arrow {
@@ -2509,6 +2535,12 @@ input::placeholder {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .benefit-before-arrow {
+    display: none;
+  }
 }
 
 .benefit-before-arrow:hover {
@@ -2548,6 +2580,14 @@ input::placeholder {
   z-index: 1;
 }
 
+@media (max-width: 1023px) {
+  .benefit-before__title {
+    padding: 15px 0;
+    max-width: 750px;
+    font-size: 32px;
+  }
+}
+
 .benefit-before__subtitle {
   display: inline-block;
   font-size: 32px;
@@ -2583,6 +2623,15 @@ input::placeholder {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .benefit-after {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    width: auto;
+    max-height: 510px;
+  }
+}
+
 .benefit-after-active {
   height: auto;
   -webkit-transform: translateX(-91%);
@@ -2592,10 +2641,23 @@ input::placeholder {
   overflow: visible;
 }
 
+@media (max-width: 1023px) {
+  .benefit-after-active {
+    -webkit-transform: translateX(-103%);
+            transform: translateX(-103%);
+  }
+}
+
 .benefit-after-content {
   margin: 0 auto;
   position: relative;
   padding: 150px 0 240px 100px;
+}
+
+@media (max-width: 1023px) {
+  .benefit-after-content {
+    padding: 100px 0 150px 60px;
+  }
 }
 
 .benefit-after-content img {
@@ -2603,6 +2665,13 @@ input::placeholder {
   top: 145px;
   right: -310px;
   max-width: 920px;
+}
+
+@media (max-width: 1023px) {
+  .benefit-after-content img {
+    right: 0;
+    max-width: 460px;
+  }
 }
 
 .benefit-after__subtitle {
