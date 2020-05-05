@@ -1,0 +1,86 @@
+.reviews
+  &-section
+    padding: 120px 0 100px
+    .block-instagram-mobile
+      display: none
+      @include mobile-landscape
+        margin: 35px auto 0
+        padding: 8px 12px 8px 20px
+        display: block
+        align-items: center
+        justify-content: space-between
+        max-width: 255px
+        background: url('//bossclean.ru/wp-content/themes/bossclean/css/../img/inst_bg.png') center/cover no-repeat
+        border-radius: 9px
+        .icon
+          display: flex
+          align-items: center
+          justify-content: space-between
+          .instagram
+            max-width: 23px
+            max-height: 23px
+          .white-logo
+            max-width: 124px
+            max-height: 16px
+          .instagram-arrow
+            max-width: 40px
+            max-height: 24px
+    &__title
+      margin-left: -120px
+    &-links
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      max-width: 410px
+      span
+        font-size: 18px
+      .logo
+        max-width: 124px
+        max-height: 14px
+      .instagram
+        max-width: 23px
+        max-height: 23px
+      .instagram-arrow
+        max-width: 50px
+        max-height: 24px
+      .block-instagram
+        width: 100%
+        max-width: 140px
+        background: url('//bossclean.ru/wp-content/themes/bossclean/css/../img/inst_bg.png') center/cover no-repeat
+        border-radius: 9px
+        .icon
+          display: flex
+          align-items: center
+          justify-content: space-between
+          padding: 15px 25px 15px 20px
+  &-top
+    &-wrap
+      margin-bottom: 20px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      @include mobile-landscape
+        display: none
+  &-mobile__title
+    display: none
+    @include mobile-landscape
+      margin-bottom: 15px
+      display: block
+      padding-left: 15px
+      font-size: 22px
+      +med
+  &-slider
+    .slick-list
+      //overflow: hidden
+      //max-width: 1900px !important
+  &-slide
+    a
+      display: block
+      width: 365px
+      height: 575px
+      @include tablet
+        margin: 0 auto
+      img
+        width: 365px
+        height: 575px

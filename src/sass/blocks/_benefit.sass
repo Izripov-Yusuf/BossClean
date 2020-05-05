@@ -1,21 +1,52 @@
 .benefit
   &-section
     padding: 150px 0 100px
-    display: flex
-    justify-content: center
-    overflow: hidden
     @include mobile-landscape
-      padding: 70px 0 50px
+      padding: 65px 0 0
+      flex-direction: column
+    .slick-list
+      width: 100%
+      overflow: hidden
+    #benefit-slider
+      width: 100%
+      display: flex
+      justify-content: center
+      overflow: hidden
+  &-mobile
+    &__title
+      display: none
+      @include mobile-landscape
+        margin-bottom: 20px
+        padding: 0 15px
+        display: block
+        +med
+        font-size: 22px
+        line-height: 100%
+        z-index: 1
   &-before
     margin: 0 auto
     position: relative
     display: flex
-    width: 100%
+    width: 100% !important
     max-width: 1440px
     transition: 0.5s
     overflow: hidden
     @include mobile-landscape
-      max-height: 510px
+      margin-bottom: 15px
+    &-mobile
+      &-bottom
+        display: none
+        @include mobile-landscape
+          position: absolute
+          bottom: 0
+          display: block
+          padding: 25px 0
+          width: 100%
+          +med
+          font-size: 24px
+          color: $white
+          background-color: $purple
+          text-align: center
     &-content
       position: relative
       width: 100%
@@ -25,6 +56,8 @@
       box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
       @include tablet
         padding: 120px 0 300px 50px
+      @include mobile-landscape
+        padding: 25px 15px 380px
       img
         position: absolute
         top: 140px
@@ -34,6 +67,11 @@
           top: 155px
           right: 50px
           max-width: 520px
+        @include mobile-landscape
+          top: 145px
+          right: 50%
+          transform: translateX(50%)
+          max-width: 300px
     &-arrow
       max-width: 170px
       background: #f5f5f5
@@ -73,11 +111,19 @@
         padding: 15px 0
         max-width: 750px
         font-size: 32px
+      @include mobile-landscape
+        display: none
     &__subtitle
       display: inline-block
       font-size: 32px
       color: $white
       +semibold
+      @include mobile-landscape
+        display: block
+        font-size: 28px
+        text-align: center
+        +reg
+
     &__new, &__cost
       text-decoration: line-through
     &__new
@@ -85,10 +131,16 @@
       margin: 40px 0 10px
       font-size: 26px
       color: #dcdcdc
+      @include mobile-landscape
+        margin: 25px 0 15px
+        font-size: 20px
     &__cost
       font-size: 32px
       color: #c25c4e
+      @include mobile-landscape
+        font-size: 28px
   &-after
+    position: relative
     transform: translateX(80%)
     height: 0
     width: 0
@@ -97,7 +149,30 @@
     @include mobile-landscape
       transform: translateX(0%)
       width: auto
-      max-height: 510px
+      overflow: visible
+      //max-height: 510px
+    &-action
+      display: flex
+      flex-direction: column
+      @include mobile-landscape
+        flex-direction: row
+        align-items: center
+        div
+          display: flex
+          flex-direction: column
+    &-top
+      display: none
+      @include mobile-landscape
+        position: absolute
+        top: 0
+        display: block
+        padding: 25px 0
+        width: 100%
+        +med
+        font-size: 22px
+        color: $white
+        background-color: $purple
+        text-align: center
     &-active
       height: auto
       transform: translateX(-91%)
@@ -112,35 +187,55 @@
       padding: 150px 0 240px 100px
       @include tablet
         padding: 100px 0 150px 60px
+      @include mobile-landscape
+        padding: 100px 0 35px 10px
       img
         position: absolute
         top: 145px
         right: -310px
         max-width: 920px
         @include tablet
-          right: 0
           max-width: 460px
+        @include mobile-landscape
+          right: 50%
+          transform: translateX(50%)
+          max-width: 260px
     &__subtitle
       display: inline-block
       max-width: 335px
       font-size: 32px
       line-height: 100%
+      @include mobile-landscape
+        font-size: 24px
     &__price
       display: block
       margin: 35px 0 10px
       font-size: 26px
       line-height: 100%
+      @include mobile-landscape
+        margin: 180px 0 0
+        font-size: 20px
     &__cost
       font-size: 32px
       +med
+      @include mobile-landscape
+        margin-bottom: 20px
+        display: block
+        font-size: 28px
     &__economy
       display: block
       margin: 20px 0 10px
       font-size: 26px
+      @include mobile-landscape
+        margin: 0
+        font-size: 20px
     &__difference
       font-size: 32px
       color: $purple
       +med
+      @include mobile-landscape
+        font-size: 28px
+        +semibold
     &__button
       display: block
       margin-top: 45px
@@ -153,3 +248,7 @@
       border-radius: 8px
       +semibold
       font-size: 15px
+      @include mobile-landscape
+        margin-top: 0
+        margin-left: 30px
+        max-width: 215px

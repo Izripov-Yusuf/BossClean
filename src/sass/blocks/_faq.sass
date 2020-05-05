@@ -1,0 +1,95 @@
+.faq
+  &-section
+    &__title
+      margin-bottom: 40px
+      @include mobile-landscape
+        margin-bottom: 20px
+        padding-bottom: 0
+        padding-left: 15px
+        font-size: 28px
+        border-bottom: none
+        font-size: 28px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    @include tablet
+      flex-direction: column
+      align-items: center
+  &-accordeon
+    width: 100%
+    max-width: 865px
+    dl
+      margin-block-end: 0
+      margin-block-start: 0
+      position: relative
+      margin-bottom: 20px
+      padding: 28px 20px
+      width: 100%
+      max-width: 865px
+      background: #fafafa
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      border-radius: 5px
+      cursor: pointer
+      transition: $normal
+      @include mobile-landscape
+        margin-bottom: 15px
+        padding: 15px
+      &:hover
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.2)
+      .accordeon__text
+        font-size: 22px
+        +semibold
+        @include mobile-landscape
+          font-size: 14px
+          +reg
+      .wrap
+        position: absolute
+        top: 35px
+        right: 20px
+        @include mobile-landscape
+          top: 20px
+          right: 15px
+        .arrow-down
+          max-width: 21px
+          max-height: 10px
+          fill: transparent
+          transition: $normal
+          &-active
+            transform: rotate(180deg)
+      dd
+        display: none
+        margin-top: 15px
+        margin-inline-start: 20px
+        max-width: 90%
+        font-size: 16px
+        @include mobile-landscape
+          font-size: 13px
+  &-banner
+    position: relative
+    @include mobile-landscape
+      display: none
+    img
+      width: 340px
+    &__text
+      position: absolute
+      top: 30%
+      left: 50%
+      transform: translateX(-50%)
+      font-size: 65px
+      line-height: 92%
+      +bold
+      color: $white
+    &__button
+      position: absolute
+      bottom: 100px
+      left: 50%
+      transform: translateX(-50%)
+      padding: 15px 0
+      width: 100%
+      max-width: 195px
+      background-color: $purple
+      border-radius: 8px
+      color: $white
+      font-size: 15px
+      line-height: 18px
+      +semibold

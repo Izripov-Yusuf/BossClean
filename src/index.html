@@ -6,6 +6,7 @@
   <title>Bossclean</title>
   <!-- <link rel="stylesheet" href="css/materialize.css"> -->
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -789,16 +790,18 @@
     </section>
     <!-- /.section video-section -->
 
-    <section class="section benefit-section swiper-container" id="benefit-slider">
-      <div class="swiper-wrapper">
-        <div class="benefit-before swiper-slide">
+    <section class="section benefit-section">
+      <span class="benefit-mobile__title">Почему это выгоднее чем купить новые?</span>
+      <div id="benefit-slider">
+        <div class="benefit-before">
           <h2 class="benefit-before__title">Почему это выгоднее чем купить новые?</h2>
           <div class="benefit-before-content">
             <span class="benefit-before__subtitle">ОБУВЬ ИСПОРЧЕНА</span>
             <span class="benefit-before__new">купить новые</span>
             <span class="benefit-before__cost">15.000₽</span>
             <picture>
-              <img src="./img/benefit/dirty-sneaker.png" srcset="./img/benefit/dirty-sneaker@2x.png" alt="dirty-sneaker">
+              <img src="./img/benefit/dirty-sneaker.png" srcset="./img/benefit/dirty-sneaker@2x.png"
+                alt="dirty-sneaker">
             </picture>
           </div>
           <!-- /.benefit-before-content -->
@@ -809,27 +812,298 @@
             </svg>
           </div>
           <!-- /.benefit-before-arrow -->
+          <div class="benefit-before-mobile-bottom">ЕСТЬ ВАРИАНТ ПОЛУЧШЕ</div>
+          <!-- /.benefit-before-mobile-bottom -->
         </div>
         <!-- /.benefit-before -->
-        <div class="benefit-after swiper-slide">
+        <div class="benefit-after">
+          <div class="benefit-after-top">ЗВУЧИТ ЛУЧШЕ НЕ ТАК ЛИ</div>
           <div class="benefit-after-content">
             <span class="benefit-after__subtitle">ВОССТАНОВЛЕНИЕ ВАШЕЙ ОБУВИ</span>
             <span class="benefit-after__price">Стоимость работ</span>
             <span class="benefit-after__cost">1.490₽</span>
-            <span class="benefit-after__economy">Экономия</span>
-            <span class="benefit-after__difference">13.510₽</span>
-            <button class="button benefit-after__button">ЗАКАЗАТЬ КУРЬЕРА</button>
+            <div class="benefit-after-action">
+              <div>
+                <span class="benefit-after__economy">Экономия</span>
+                <span class="benefit-after__difference">13.510₽</span>
+              </div>
+              <button class="button benefit-after__button">ЗАКАЗАТЬ КУРЬЕРА</button>
+            </div>
+            <!-- /.benefit-after-action -->
             <picture>
-              <img src="./img/benefit/clean-sneaker.png" srcset="./img/benefit/clean-sneaker@2x.png" alt="dirty-sneaker">
+              <img src="./img/benefit/clean-sneaker.png" srcset="./img/benefit/clean-sneaker@2x.png"
+                alt="dirty-sneaker">
             </picture>
           </div>
           <!-- /.benefit-after-content -->
         </div>
         <!-- /.benefit-after -->
       </div>
-      <!-- /.swiper-wrapper -->
     </section>
     <!-- /.section benefit-section -->
+
+    <!-- <section class="section result-section">
+      <h2 class="section__title result-section__title">before/after</h2>
+    </section> -->
+    <!-- /.section result-section -->
+
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="reviews-top-wrap">
+          <h2 class="section__title reviews-section__title">Отзывы</h2>
+          <div class="reviews-section-links">
+            <svg class="logo">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+            <span>в instagram</span>
+            <a href="https://www.instagram.com/bossclean.ru/" class="block block-instagram" target="_blank">
+              <div class="icon">
+                <svg class="instagram">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+                <svg class="instagram-arrow">
+                  <use xlink:href="img/sprite.svg#instagram-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <!-- /.reviews-section-links -->
+        </div>
+        <!-- /.reviews-top-wrap -->
+      </div>
+      <!-- /.container -->
+      <div class="reviews-mobile__title">Отзывы о нас в instagram</div>
+      <div class="reviews-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+          <div class="reviews-slide swiper-slide">
+            <a href="#">
+              <picture>
+                <img src="./img/reviews/review.jpg.webp" alt="review-photo">
+              </picture>
+            </a>
+          </div>
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.reviews-slider -->
+      <a href="https://www.instagram.com/bossclean.ru/" class="block block-instagram-mobile" target="_blank">
+        <div class="icon">
+          <svg class="instagram">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+          <svg class="white-logo">
+            <use xlink:href="img/sprite.svg#white-logo"></use>
+          </svg>
+          <svg class="instagram-arrow">
+            <use xlink:href="img/sprite.svg#instagram-arrow"></use>
+          </svg>
+        </div>
+      </a>
+    </section>
+    <!-- /.section reviews-section -->
+
+    <section class="section faq-section">
+      <h2 class="section__title faq-section__title">Вопросы и ответы</h2>
+      <div class="container">
+        <div class="faq-wrap">
+          <div class="faq-accordeon">
+            <dl>
+              <dt><span class="accordeon__text">Оплата и доставка</span></dt>
+              <div class="wrap">
+                <svg class="arrow-down">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum non dolores, soluta amet vel sit qui fuga
+                esse itaque, dolor laborum doloremque recusandae atque. Quo odio aliquam ipsum deleniti.</dd>
+            </dl>
+            <dl>
+              <dt><span class="accordeon__text">Сроки выполнения</span></dt>
+              <div class="wrap">
+                <svg class="arrow-down">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum non dolores, soluta amet vel sit qui fuga
+                esse itaque, dolor laborum doloremque recusandae atque. Quo odio aliquam ipsum deleniti.</dd>
+            </dl>
+            <dl>
+              <dt><span class="accordeon__text">Гарантии и страховка</span></dt>
+              <div class="wrap">
+                <svg class="arrow-down">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum non dolores, soluta amet vel sit qui fuga
+                esse itaque, dolor laborum doloremque recusandae atque. Quo odio aliquam ipsum deleniti.</dd>
+            </dl>
+            <dl>
+              <dt><span class="accordeon__text">Как происходит оценка обуви</span></dt>
+              <div class="wrap">
+                <svg class="arrow-down">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum non dolores, soluta amet vel sit qui fuga
+                esse itaque, dolor laborum doloremque recusandae atque. Quo odio aliquam ipsum deleniti.</dd>
+            </dl>
+            <dl>
+              <dt><span class="accordeon__text">Когда курьер сможет забрать и доставить обувь?</span></dt>
+              <div class="wrap">
+                <svg class="arrow-down">
+                  <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum non dolores, soluta amet vel sit qui fuga
+                esse itaque, dolor laborum doloremque recusandae atque. Quo odio aliquam ipsum deleniti.</dd>
+            </dl>
+          </div>
+          <!-- /.faq-accordeon -->
+          <div class="faq-banner">
+            <picture>
+              <img src="./img/accordeon/accordeon-banner.jpg" srcset="./img/accordeon/accordeon-banner@2x.jpg" alt="accordeon-banner">
+            </picture>
+            <span class="faq-banner__text">БАННЕР</span>
+            <button class="button faq-banner__button">ЗАКАЗАТЬ КУРЬЕРА</button>
+          </div>
+          <!-- /.faq-banner -->
+        </div>
+        <!-- /.faq-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section faq-section -->
+
+    <section class="section news-section">
+      <h2 class="section__title news-section__title">СМИ о нас</h2>
+      <div class="container">
+        <div class="news-wrap">
+          <div class="news-item">
+            <a href="#">
+              <img src="./img/news/news-1.jpg" alt="news-image">
+              <h3 class="news__title">Российский рэп-исполнитель открывает сервис по уходу за обувью</h3>
+              <span class="news__source">Riamoda.ru</span>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="./img/news/news-2.png" alt="news-image">
+              <h3 class="news__title">Big Russian Boss откроет сервис по уходу за обувью</h3>
+              <span class="news__source">Secretmag.ru</span>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="./img/news/news-3.png" alt="news-image">
+              <h3 class="news__title">Российский рэпер запускает обувную химчистку bossclean</h3>
+              <span class="news__source">Cre.eu</span>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="./img/news/news-1.jpg" alt="news-image">
+              <h3 class="news__title">Big Russian Boss займётся чисткой обуви</h3>
+              <span class="news__source">Sostav.ru</span>
+            </a>
+          </div>
+        </div>
+        <!-- /.news-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section news-section -->
+
+    <!-- <section class="section cart-section">
+      <h2 class="section__title cart-section__title">Карта стоимости доставки</h2>
+      <div class="container">
+        <div class="cart-wrap">
+          
+        </div>
+        /.cart-wrap -->
+      <!-- </div> -->
+      <!-- /.container -->
+    <!-- </section> -->
+    <!-- /.section cart-section -->
+
+    <section class="section about-section about-section-2">
+      <div class="container">
+        <div class="about-block">
+          <div class="about-image">
+            <picture><img src="./img/about/about-img.jpg" alt="about-img"></picture>
+          </div>
+          <div class="about-text">
+            <p>Хорошая обувь – это не тот предмет гардероба, который меняют каждый сезон. И первый шаг к тому, чтобы сэкономить и
+            сохранить качество обуви – это именно грамотный и своевременный уход.</p>
+            <p>Неправильная чистка – хуже, чем ее отсутствие! Ничто не портит обувь так, как самостоятельные попытки избавиться от
+            следов реагентов и прочих сложных загрязнителей.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section discount-section">
+      <div class="container">
+        <div class="discount-img-wrapper">
+          <img src="https://bossclean.ru/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/01/shoes.jpg.webp"
+            class="discond-img">
+        </div>
+        <div class="discount-shadow">
+          <h3 class="discount-shadow__title"> Вы получили скидку 15%</h3>
+          <h5 class="discount-shadow__subtitle"> При сдаче 3-х пар</h5>
+          <button class="button discount-shadow__button"> Попробовать </button>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
 
   </main>
 
@@ -917,9 +1191,10 @@
       <div class="bot-part">© 2020 BOSSCLEAN</div>
     </div>
   </footer>
-  <!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script src="./js/materialize.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <!-- <script src="./js/materialize.js"></script> -->
   <script src="./js/swiper.min.js"></script>
+  <script src="./js/slick.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

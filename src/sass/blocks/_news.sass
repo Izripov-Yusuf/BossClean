@@ -1,0 +1,59 @@
+.news
+  &-section
+    padding: 90px 0 100px
+    @include mobile-landscape
+      padding: 0 0 75px
+    &__title
+      margin-bottom: 65px
+      @include mobile-landscape
+        margin-bottom: 20px
+        padding-bottom: 0
+        padding-left: 15px
+        font-size: 28px
+        border-bottom: none
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    @include tablet
+      flex-direction: column
+      align-items: center
+  &-item
+    margin-bottom: 45px
+    margin-right: 20px
+    flex: 0 48%
+    @include mobile-landscape
+      margin-right: 0
+    &:last-child
+      margin-right: 0
+    a
+      position: relative
+      display: block
+    img
+      max-width: 600px
+      height: 370px
+      filter: brightness(0.4)
+      @include mobile-landscape
+        max-width: 340px
+        height: 300px
+  &__title
+    position: absolute
+    top: 55px
+    left: 40px
+    max-width: 500px
+    color: $white
+    font-size: 36px
+    line-height: 140%
+    text-transform: uppercase
+    @include mobile-landscape
+      top: 30px
+      left: 25px
+      font-size: 26px
+  &__source
+    position: absolute
+    bottom: 60px
+    left: 40px
+    color: $white
+    font-size: 16px
+    @include mobile-landscape
+      bottom: 35px
+      left: 25px

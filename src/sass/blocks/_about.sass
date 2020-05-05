@@ -3,6 +3,39 @@
     padding-top: 70px
     @include mobile-landscape
       padding-top: 55px
+    &-2
+      padding: 100px 0 80px
+      @include mobile-landscape
+        padding: 50px 0 40px
+      .about
+        &-block
+          display: flex
+          align-items: center
+          justify-content: space-between
+          @include mobile-landscape
+            flex-direction: column
+        &-image
+          margin-right: 30px
+          @include mobile-landscape
+            margin-right: 0
+            margin-bottom: 30px
+            display: block
+          img
+            max-width: 740px
+            @include tablet
+              max-width: 550px
+        &-text
+          p
+            max-width: 435px
+            margin-bottom: 40px
+            font-size: 22px
+            line-height: 128%
+            text-align: center
+            @include mobile-landscape
+              margin-bottom: 20px
+              font-size: 16px
+            &:last-child
+              margin-bottom: 0
     &__title
       margin-bottom: 80px
       font-size: 43px
