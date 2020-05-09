@@ -17,6 +17,8 @@
     @include tablet
       flex-direction: column
       align-items: center
+    .slick-list
+      overflow: hidden
   &-item
     margin-bottom: 45px
     margin-right: 20px
@@ -35,6 +37,8 @@
       @include mobile-landscape
         max-width: 340px
         height: 300px
+      @include mobile
+        max-width: 300px
   &__title
     position: absolute
     top: 55px
@@ -48,6 +52,8 @@
       top: 30px
       left: 25px
       font-size: 26px
+    @include mobile
+      left: 15px
   &__source
     position: absolute
     bottom: 60px
@@ -57,3 +63,5 @@
     @include mobile-landscape
       bottom: 35px
       left: 25px
+    @include mobile
+      left: 15px

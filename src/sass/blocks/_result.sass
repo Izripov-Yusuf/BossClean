@@ -1,0 +1,137 @@
+.result
+  &-section
+  &-slider
+    position: relative
+    display: flex
+    justify-content: space-between
+    &-controls
+      margin: 65px auto 50px
+      width: 100%
+      max-width: 195px
+    &-arrows
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .slider-left-arrow, .slider-right-arrow
+        max-width: 42px
+        max-height: 8px
+        cursor: pointer
+    .slick-list
+      overflow: hidden
+      position: relative
+      display: block
+      margin: 0
+    .slick-track
+      display: flex
+      justify-content: space-between
+    .slick-dots
+      bottom: -77px
+      left: 50%
+      transform: translateX(-50%)
+      max-width: 95px
+      li
+        margin: 0
+        margin-right: 10px
+        width: 16px
+        height: 16px
+        background-color: #efefef
+        border-radius: 50%
+        &:last-child
+          margin-right: 0
+        button
+          &:before
+            content: ''
+      li.slick-active
+        background-color: $purple
+    .slick-slide
+      //width: 500px !important
+    .slick-center
+      //width: 720px !important
+      .result
+        &-slide
+          &-container
+            .line
+              display: block
+              position: absolute
+              top: 0
+              left: 50%
+              transform: translateX(-50%)
+              height: 100%
+              width: 4px
+              background-color: $purple
+              z-index: 1
+      .result-slide-image
+        &--dirty
+          //max-height: 490px
+          img
+            //min-width: 720px
+            //max-width: 720px
+            //height: 490px
+        &--clean
+          //width: 720px
+          img
+            //width: 720px
+            //height: 490px
+  &-slide
+    position: relative
+    outline: none
+    transition: all $normal ease
+    &-container
+      margin: 0 auto
+      position: relative
+      display: flex
+      width: max-content
+      .line
+        display: none
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        height: 100%
+        width: 4px
+        background-color: $purple
+        z-index: 1
+    &-image
+      &--dirty
+        width: 50%
+        max-width: 100%
+        max-height: 300px
+        position: absolute
+        top: 0
+        left: 0
+        overflow: hidden
+        @include mobile
+          max-height: 225px
+        img
+          min-width: 435px
+          max-width: 435px
+          height: 300px
+          display: block
+          background-color: #fff
+          @include mobile
+            min-width: 290px
+            max-width: 290px
+            height: 225px
+      &--clean
+        width: 435px
+        @include mobile
+          width: 290px
+        img
+          width: 435px
+          height: 300px
+          display: block
+          @include mobile
+            width: 290px
+            height: 225px
+  &__button
+    margin: 0 auto
+    padding: 17px 0
+    display: block
+    width: 100%
+    max-width: 195px
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(7, 255, 255, 0.12), 0px 10px 20px rgba(97, 70, 238, 0.22)
+    border-radius: 8px
+    background-color: $purple
+    color: $white
+    +semibold
+    font-size: 13px

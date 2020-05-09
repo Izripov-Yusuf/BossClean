@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const benefitSliderSection = document.querySelector('.benefit-section');
 
   if (benefitSliderSection) {
-    if (window.innerWidth < 768) {
+    if (document.documentElement.clientWidth < 768) {
       $('#benefit-slider').slick({
         infinite: false,
         centerMode: true,
-        spaceBetween: 50,
+        //spaceBetween: 50,
         arrows: false,
         //centerPadding: '60px',
         slidesToShow: 1,
@@ -91,6 +91,87 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Слайдер новостей на мобильной версии
+  const newsSliderSection = document.querySelector('.news-section');
+
+  if (newsSliderSection) {
+    if (window.innerWidth < 1024) {
+      $('.news-wrap').slick({
+        infinite: false,
+        centerMode: true,
+        arrows: false,
+        //centerPadding: '60px',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        verticalSwiping: true,
+        vertical: true,
+      });
+    }
+  }
+
+  // Слайдер до/после
+  const resultSliderSection = document.querySelector('.result-section');
+
+  if (resultSliderSection) {
+    $('.result-slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      dots: true,
+      prevArrow: $('.slider-left-arrow'),
+      nextArrow: $('.slider-right-arrow'),
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [{
+          breakpoint: 1251,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 840,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ],
+    });
+  }
+
+  // Смена картинок
+  document.querySelectorAll(".result-slide-container").forEach(item => {
+
+    let lines = document.querySelectorAll('.line');
+    var e;
+    var t = jQuery(item).width();
+
+    jQuery(item).on("mouseenter", function (n) {
+      e = jQuery(item).offset().left;
+    });
+
+    jQuery(item).on("mouseleave", function (n) {
+      e = null;
+    });
+
+    let containerParent = jQuery(item)[0].parentNode;
+
+    if (containerParent.classList.contains('slick-center')) {
+      jQuery(item).on("mousemove", function (n) {
+
+        var o = jQuery(item).find(".result-slide-image--dirty"),
+          a = n.clientX - e,
+          i = 100 * a / t;
+        jQuery(o).css({
+          width: i + "%"
+        });
+        jQuery(lines).css({
+          left: i + "%"
+        });
+      });
+    }
+
+  });
+
+
   // Слайдер с отзывами
   const reviewsSection = document.querySelector('.reviews-section');
 
@@ -99,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 4,
       spaceBetween: 20,
       autoplay: {
-        delay: 5000000,
+        delay: 5000,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -109,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
         1023: {
           slidesPerView: 3,
         },
-        1024: {
+        1461: {
           slidesPerView: 4,
         },
       },

@@ -81,6 +81,12 @@
       height: 575px
       @include tablet
         margin: 0 auto
+      @include mobile-landscape
+        width: auto
+        height: auto
       img
         width: 365px
         height: 575px
+        @include mobile-landscape
+          width: 100%
+          height: auto
