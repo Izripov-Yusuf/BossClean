@@ -159,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
       var o = jQuery(item).find(".result-slide-image--dirty"),
         a = n.clientX - e,
         i = 100 * a / t;
+
       jQuery(o).css({
         width: i + "%"
       });
