@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Смена картинок
   document.querySelectorAll(".result-slide-container").forEach(item => {
-
-    let lines = document.querySelectorAll('.line');
+    let lines = document.querySelectorAll('.line'),
+        circles = document.querySelectorAll('.circle');
     var e;
     var t = jQuery(item).width();
 
@@ -154,20 +154,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let containerParent = jQuery(item)[0].parentNode;
 
-    if (containerParent.classList.contains('slick-center')) {
-      jQuery(item).on("mousemove", function (n) {
+    jQuery(item).on("mousemove", function (n) {
 
-        var o = jQuery(item).find(".result-slide-image--dirty"),
-          a = n.clientX - e,
-          i = 100 * a / t;
-        jQuery(o).css({
-          width: i + "%"
-        });
-        jQuery(lines).css({
-          left: i + "%"
-        });
+      var o = jQuery(item).find(".result-slide-image--dirty"),
+        a = n.clientX - e,
+        i = 100 * a / t;
+      jQuery(o).css({
+        width: i + "%"
       });
-    }
+      jQuery(lines).css({
+        left: i + "%"
+      });
+      jQuery(circles).css({
+        left: i + "%"
+      });
+    });
 
   });
 

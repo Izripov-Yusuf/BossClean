@@ -52,14 +52,11 @@
           &-container
             .line
               display: block
-              position: absolute
-              top: 0
-              left: 50%
-              transform: translateX(-50%)
-              height: 100%
-              width: 4px
-              background-color: $purple
-              z-index: 1
+            .circle
+              display: flex
+              align-items: center
+              justify-content: space-between
+
       .result-slide-image
         &--dirty
           //max-height: 490px
@@ -81,6 +78,7 @@
       position: relative
       display: flex
       width: max-content
+      overflow: hidden
       .line
         display: none
         position: absolute
@@ -91,6 +89,24 @@
         width: 4px
         background-color: $purple
         z-index: 1
+      .circle
+        display: none
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        padding: 0 10px
+        background-color: $white
+        width: 63px
+        height: 63px
+        border-radius: 50%
+        border: 1px solid $purple
+        z-index: 2
+        .result-purple-left-arrow, .result-purple-right-arrow
+          max-width: 10px
+          max-height: 18px
+          fill: transparent
+
     &-image
       &--dirty
         width: 50%
