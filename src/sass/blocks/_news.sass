@@ -2,7 +2,7 @@
   &-section
     padding: 90px 0 100px
     @include mobile-landscape
-      padding: 0 0 75px
+      padding: 0 0 30px
     &__title
       margin-bottom: 65px
       @include mobile-landscape
@@ -23,6 +23,8 @@
     margin-bottom: 45px
     margin-right: 20px
     flex: 0 48%
+    @include tablet
+      width: auto !important
     @include mobile-landscape
       margin-right: 0
     &:last-child

@@ -54,6 +54,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Скрипт, отвечающий за окраску круга в карточке услуг в зависимости от дней
+  let test = document.querySelectorAll('.services-item-days__amount'),
+      circleSvg = document.querySelectorAll('.circle');
+
+  for (let i = 0; i < test.length; i++) {
+    //console.log(i);
+    for (let j = 0; j < circleSvg.length; j++) {
+      //console.log(j);
+      if ([i] === [j]) {
+        console.log(1);
+      }
+    }
+  }
+
   // hero слайдер на мобильной версии
   const heroSectionMobile = document.querySelector('.hero-section-mobile');
 
@@ -95,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsSliderSection = document.querySelector('.news-section');
 
   if (newsSliderSection) {
-    if (window.innerWidth < 1024) {
+    if (document.documentElement.clientWidth < 1024) {
       $('.news-wrap').slick({
         infinite: false,
         centerMode: true,
@@ -138,7 +152,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Смена картинок
-  document.querySelectorAll(".result-slide-container").forEach(item => {
+  let resultSlideContainer = document.querySelectorAll('.result-slide-container');
+  for (let i = 0; i < resultSlideContainer.length; i++) {
+    $(function () {
+      $(resultSlideContainer[i]).twentytwenty({
+        default_offset_pct: 0.5, /* Какая часть изображения отображается при загрузке страницы*/
+        orientation: 'horizontal', /* Ориентация фотографий('horizontal' or 'vertical')*/
+        before_label: 'January 2017', /* Set a custom before label*/
+        after_label: 'March 2017', /* Set a custom after label*/
+        no_overlay: true, /*Не показывать наложение до и после*/
+        move_slider_on_hover: true, /* Переместить ползунок при наведении мыши?*/
+        move_with_handle_only: true, /* Позволяет пользователю проводить пальцем в любом месте изображения для управления движением ползунка.*/
+        click_to_move: false /* Разрешить пользователю нажимать (или касаться) в любом месте изображения, чтобы переместить ползунок в это место.*/
+      });
+    });
+  }
+  /* document.querySelectorAll(".result-slide-container").forEach(item => {
     let lines = document.querySelectorAll('.line'),
         circles = document.querySelectorAll('.circle');
     var e;
@@ -160,18 +189,20 @@ document.addEventListener('DOMContentLoaded', () => {
         a = n.clientX - e,
         i = 100 * a / t;
 
-      jQuery(o).css({
-        width: i + "%"
-      });
-      jQuery(lines).css({
-        left: i + "%"
-      });
-      jQuery(circles).css({
-        left: i + "%"
-      });
+      if (containerParent.classList.contains('slick-center')) {
+        jQuery(o).css({
+          width: i + "%"
+        });
+        jQuery(lines).css({
+          left: i + "%"
+        });
+        jQuery(circles).css({
+          left: i + "%"
+        });
+      }
     });
 
-  });
+  }); */
 
 
   // Слайдер с отзывами

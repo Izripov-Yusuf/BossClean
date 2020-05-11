@@ -1,5 +1,12 @@
 .result
   &-section
+    &__title
+      margin: 65px 0 25px
+      padding: 0
+      padding-left: 15px
+      font-size: 28px
+      border: none
+
   &-slider
     position: relative
     display: flex
@@ -8,6 +15,8 @@
       margin: 65px auto 50px
       width: 100%
       max-width: 195px
+      @include mobile-landscape
+        margin: 40px auto 20px
     &-arrows
       display: flex
       align-items: center
@@ -29,6 +38,8 @@
       left: 50%
       transform: translateX(-50%)
       max-width: 95px
+      @include mobile-landscape
+        bottom: -52px
       li
         margin: 0
         margin-right: 10px
@@ -47,15 +58,6 @@
       //width: 500px !important
     .slick-center
       //width: 720px !important
-      .result
-        &-slide
-          &-container
-            .line
-              display: block
-            .circle
-              display: flex
-              align-items: center
-              justify-content: space-between
 
       .result-slide-image
         &--dirty
@@ -79,40 +81,14 @@
       display: flex
       width: max-content
       overflow: hidden
-      .line
-        display: none
-        position: absolute
-        top: 0
-        left: 50%
-        transform: translateX(-50%)
-        height: 100%
-        width: 4px
-        background-color: $purple
-        z-index: 1
-      .circle
-        display: none
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        padding: 0 10px
-        background-color: $white
-        width: 63px
-        height: 63px
-        border-radius: 50%
-        border: 1px solid $purple
-        z-index: 2
-        .result-purple-left-arrow, .result-purple-right-arrow
-          max-width: 10px
-          max-height: 18px
-          fill: transparent
+      transition: $normal
 
     &-image
       &--dirty
-        width: 50%
-        max-width: 100%
-        max-height: 300px
-        position: absolute
+        //width: 50%
+        //max-width: 100%
+        //max-height: 300px
+        //position: absolute
         top: 0
         left: 0
         overflow: hidden

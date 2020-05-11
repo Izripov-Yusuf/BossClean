@@ -79,3 +79,31 @@ input::placeholder
 
 .slick-list
   padding: 0 !important
+
+.twentytwenty-horizontal .twentytwenty-handle
+  &:before, &:after
+    width: 4px
+    box-shadow: none
+    background: $purple
+.twentytwenty-horizontal .twentytwenty-handle
+  &:before
+    margin-bottom: 22.5px
+.twentytwenty-horizontal .twentytwenty-handle
+  &:after
+    margin-top: 22.5px
+.twentytwenty-handle
+  display: flex
+  align-items: center
+  justify-content: space-between
+  box-shadow: none
+  padding: 0 8px
+  background-color: $white
+  width: 46px
+  height: 46px
+  border-radius: 50%
+  border: 1px solid $purple
+  box-sizing: border-box
+  .result-purple-left-arrow, .result-purple-right-arrow
+    max-width: 7px
+    max-height: 14px
+    fill: transparent

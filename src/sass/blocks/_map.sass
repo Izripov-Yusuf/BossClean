@@ -1,0 +1,132 @@
+.map
+  &-section
+    &__title
+      @include mobile-landscape
+        margin-bottom: 20px
+        padding-bottom: 0
+        padding-left: 15px
+        font-size: 28px
+        border-bottom: none
+        text-align: left
+  &-wrap
+    margin-top: 60px
+    display: flex
+    justify-content: space-between
+    @include mobile-landscape
+      flex-direction: column
+      margin-top: 0
+  &-interactive
+    margin-right: 20px
+    width: 100%
+    max-width: 820px
+    @include mobile-landscape
+      margin: 20px 0
+      order: 1
+  &__button
+    display: none
+    @include mobile-landscape
+      margin: 0 auto
+      display: block
+      width: 100%
+      max-width: 165px
+      padding: 12px 0
+      color: $white
+      background-color: $purple
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1)
+      border-radius: 3px
+      font-size: 12px
+      line-height: 15px
+      +semibold
+      order: 2
+  &-descr
+    margin-top: 20px
+    width: 100%
+    max-width: 390px
+    @include mobile-landscape
+      margin-top: 0
+      order: 0
+    &-top
+      margin-bottom: 50px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      max-width: 325px
+      @include mobile-landscape
+        margin-bottom: 20px
+      .map__city
+        margin-right: 20px
+        font-size: 22px
+        @include mobile-landscape
+          font-size: 16px
+          +med
+      .select-city
+        position: relative
+        width: 100%
+        max-width: 110px
+        i
+          top: 28%
+          right: 10px
+          transform: translateY(-50%)
+          position: absolute
+          transform: rotate(45deg)
+          border: solid #ee6b59
+          border-width: 0 1px 1px 0
+          display: inline-block
+          padding: 4px
+          cursor: pointer
+        select
+          display: block
+          width: 100%
+          max-width: 110px
+          padding: 6px 0 6px 10px
+          background-color: #f5f5f5
+          border: none
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04)
+          border-radius: 14.5px
+          font-size: 16px
+          +bold
+          cursor: pointer
+          appearance: none
+          outline: none
+    &-bottom
+      width: 100%
+      max-width: 370px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding-left: 20px
+      @include mobile-landscape
+        max-width: 325px
+      .mkad-free, .mkad-paid
+        display: flex
+        flex-direction: column
+        span
+          &:first-child
+            position: relative
+            margin-bottom: 10px
+            font-size: 22px
+            color: #8d8d8d
+            @include mobile-landscape
+              margin-bottom: 5px
+              font-size: 16px
+            &:before
+              content: ''
+              position: absolute
+              top: 0
+              left: -18px
+              display: block
+              width: 14px
+              height: 14px
+              border-radius: 50%
+              background-color: #6abc52
+          &:last-child
+            font-size: 20px
+            +bold
+            @include mobile-landscape
+              font-size: 16px
+              +med
+      .mkad-paid
+        span.mkad-paid__text
+          &:before
+            background-color: #d1d27b
