@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница услуги</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar-js">
+    <div class="container">
+      <div class="navbar-block">
+        <div class="navbar__logo">
+          <a href="#" class="icon-logo">
+            <svg class="logo">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <span>ПРОФЕССИОНАЛЬНЫЙ ОБУВНОЙ СЕРВИС</span>
+        </div>
+        <!-- /.navbar__logo -->
+        <ul class="navbar-menu">
+          <li>
+            <a href="#">КОНТАКТЫ</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">БЛОГ</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ВЫЗОВ КУРЬЕРА</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ДО/ПОСЛЕ</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">УСЛУГИ</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">МАГАЗИН</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="navbar-profile">
+          <span class="navbar-profile__text">Профиль</span>
+          <div class="user-icon" id="user-icon">
+            <svg class="user">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+            <a href="#" class="user-login">Войти</a>
+            <svg class="user-logo">
+              <use xlink:href="img/sprite.svg#user-logo"></use>
+            </svg>
+            <a href="#" class="user-reg">Создать</a>
+          </div>
+        </div>
+        <!-- /.navbar-profile -->
+        <div class="navbar-burger">
+          <span class="burger"></span>
+        </div>
+        <!-- /.navbar-burger -->
+        <div class="navbar-account">
+          <a href="#" class="navbar-account__login">Аккаунт</a>
+          <a href="#" class="navbar-account__exit">Выйти</a>
+          <div class="navbar-account-data">
+            <span class="navbar-account__name">Лох Лоховский</span>
+            <div class="navbar-account-image">
+              <img src="./img/user-photo.png" alt="user-photo">
+            </div>
+            <!-- /.navbar-account-image -->
+          </div>
+          <!-- /.navbar-account-data -->
+        </div>
+        <!-- /.navbar-account -->
+      </div>
+      <!-- /.navbar-block -->
+    </div>
+  </nav>
+  <!-- /.navbar -->
+  <nav class="navbar-fixed" id="navbar-fixed-js">
+    <div class="container">
+      <div class="navbar-fixed-block">
+        <div class="navbar__logo">
+          <a href="#" class="icon-logo">
+            <svg class="logo">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <span>ПРОФЕССИОНАЛЬНЫЙ ОБУВНОЙ СЕРВИС</span>
+        </div>
+        <!-- /.navbar__logo -->
+        <div class="navbar-burger">
+          <span class="burger"></span>
+        </div>
+        <!-- /.navbar-burger -->
+      </div>
+      <!-- /.navbar-fixed-block -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.navbar-fixed -->
+  <nav class="navbar-mobile">
+    <div class="navbar-mobile-top">
+      <div class="navbar-profile">
+        <div class="user-icon" id="user-icon">
+          <a href="#" class="user-login">Войти</a>
+          <svg class="user-logo">
+            <use xlink:href="img/sprite.svg#user-logo"></use>
+          </svg>
+          <a href="#" class="user-reg">Создать</a>
+          <svg class="user">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /.navbar-profile -->
+      <div class="navbar-account">
+        <div class="navbar-account-data">
+          <span class="navbar-account__name">Лох Лоховский</span>
+          <div class="navbar-account-image">
+            <img src="./img/user-photo.png" alt="user-photo">
+          </div>
+          <!-- /.navbar-account-image -->
+        </div>
+        <!-- /.navbar-account-data -->
+        <a href="#" class="navbar-account__login">Аккаунт</a>
+        <a href="#" class="navbar-account__exit">Выйти</a>
+      </div>
+      <!-- /.navbar-account -->
+      <div class="navbar-mobile-close">×</div>
+    </div>
+    <!-- /.navbar-mobile-top -->
+    <ul class="navbar-menu">
+      <li>
+        <a href="#">КОНТАКТЫ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">БЛОГ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">ВЫЗОВ КУРЬЕРА</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">ДО/ПОСЛЕ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">УСЛУГИ</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">МАГАЗИН</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- /.navbar-menu -->
+    <div class="navbar-menu__title">Мы всегда на связи</div>
+    <div class="socials">
+      <a href="https://api.whatsapp.com/send?phone=79672441718&amp;text=&amp;source=&amp;data="
+        class="block block-whatsapp" target="_blank">
+        <div class="icon">
+          <svg class="whatsapp">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </div>
+        <div class="name">WhatsApp</div>
+      </a>
+      <a href="https://www.instagram.com/bossclean.ru/" class="block block-instagram" target="_blank">
+        <div class="icon">
+          <svg class="instagram">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </div>
+        <div class="name">Instagram</div>
+      </a>
+      <a href="https://teleg.run/bossclean" class="block block-telegram" target="_blank">
+        <div class="icon">
+          <svg class="telegram">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </div>
+        <div class="name">Telegram</div>
+      </a>
+      <a href="https://www.facebook.com/bosscleanru/" class="block block-facebook" target="_blank">
+        <div class="icon">
+          <div class="facebook-background">
+            <svg class="facebook">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="name">Facebook</div>
+      </a>
+      <a href="https://vk.com/bossclean" class="block block-vk" target="_blank">
+        <div class="icon">
+          <svg class="vk">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </div>
+        <div class="name">Вконтакте</div>
+      </a>
+      <a href="tel:84950057763" class="block block-phone" target="_blank">
+        <div class="icon">
+          <svg class="phone">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </div>
+        <div class="name">8(495)005-77-63</div>
+      </a>
+    </div>
+    <!-- /.socials -->
+  </nav>
+  <!-- /.navbar-mobile -->
+
+  <main>
+    <div class="container">
+      <div class="page service-page">
+        <div class="service-back">
+          <button class="button service-back-button">
+            <svg class="arrow-left">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+            <span>Назад</span>
+          </button>
+          <h2 class="page__title service-page__title">ХИМЧИСТКА ОБУВИ CLASSIC</h2>
+        </div>
+        <!-- /.service-back -->
+
+        <div class="service-item-wrap">
+          <div class="service-content">
+            <h3 class="service-content--mobile__title">ХИМЧИСТКА ОБУВИ CLASSIC</h3>
+            <div class="service-content-wrap">
+              <div class="service-descr">
+                <h3 class="service-descr__title">Что входит в химчистку</h3>
+                <div class="service-descr-block">
+                  <p>Classic – это комплексная химчистка кроссовок из ткани, канваса, синтетических материалов и искусственной кожи.
+                  </p>
+                  <p>После прохождения комплексной чистки 95% загрязнений устраняются и кроссовкам возвращается исходное состояние. Мы
+                    устраняем пятна, въевшуюся грязь, разводы, восстанавливаем форму кроссовка.</p>
+                  <p>В комплексную чистку Classic входит:</p>
+                  <ul class="descr-list">
+                    <li class="descr-list__item">Первичная чистка обуви средством «Sole Fresh»Classic – это комплексная химчистка
+                      кроссовок из ткани, канваса,
+                      синтетических материалов и искусственной кожи.</li>
+                  </ul>
+              
+                </div>
+                <!-- /.service-descr-block -->
+              </div>
+              <!-- /.service-descr -->
+              <form action="" class="service-cost">
+                <h3 class="service-cost__title">Стоимость</h3>
+                <div class="service-cost-block">
+                  <span class="cost"><span id="cost-js" data-price="1000">1.000</span>₽</span>
+                  <span class="amount">за пару</span>
+                  <button class="button cost-block__button">ВЫЗВАТЬ КУРЬЕРА</button>
+                </div>
+                <!-- /.service-cost-block -->
+                <div class="services-item-wrapper">
+                  <span>Сроки выполнения</span>
+                  <div class="services-item-days">
+                    <span class="services-item-days__amount">2</span>
+                    <span class="services-item-days__text">дня</span>
+                    <svg class="circle">
+                      <use xlink:href="img/sprite.svg#circle2"></use>
+                    </svg>
+                  </div>
+                  <!-- /.services-item-days -->
+                </div>
+                <div class="services-item-wrapper">
+                  <span>Бесплатная доставка</span>
+                  <svg class="delivery">
+                    <use xlink:href="img/sprite.svg#delivery"></use>
+                  </svg>
+                </div>
+                <div class="services-item-wrapper">
+                  <span>Гарантия качества</span>
+                  <svg class="sneaker">
+                    <use xlink:href="img/sprite.svg#sneaker"></use>
+                  </svg>
+                </div>
+                <div class="services-item-wrapper">
+                  <span>Нужен ремонт обуви?</span>
+                  <div class="services-fix">
+                    <input type="checkbox" class="fix" id="fix">
+                    <label for="fix" class="fix-label"></label>
+                  </div>
+                  <!-- /.services-fix -->
+                </div>
+              </form>
+              <!-- /.service-cost -->
+            </div>
+            <!-- /.service-content-wrap -->
+            <form action="" class="service-additional">
+              <div class="services-item-fast">
+                <div class="services-item-wrapper">
+                  <span>Экспресс химчистка за 2 дня</span>
+                  <div class="services-fix">
+                    <span class="service-additional__descr">+50% к стоимости</span>
+                    <input type="checkbox" class="fast" id="fast">
+                    <label for="fast" class="fast-label"></label>
+                  </div>
+                  <!-- /.services-fix -->
+                </div>
+                <svg class="fire">
+                  <use xlink:href="img/sprite.svg#fire"></use>
+                </svg>
+              </div>
+              <!-- /.services-item-fast -->
+              <div class="services-item-wrapper">
+                <span>Реставрация задников</span>
+                <div class="services-fix">
+                  <span class="service-additional__descr">1.000₽</span>
+                  <input type="checkbox" class="restoration" id="restoration">
+                  <label for="restoration" class="restoration-label"></label>
+                </div>
+                <!-- /.services-fix -->
+              </div>
+            </form>
+            <!-- /.service-additional -->
+          </div>
+          <!-- /.service-content -->
+          <div class="service-images">
+            <div class="result-slide-container">
+              <div class="result-slide-image result-slide-image--dirty">
+                <picture>
+                  <img src="./img/result/result-4--dirty.png" srcset="" alt="slide-photo">
+                </picture>
+              </div>
+              <!-- /.result-slide-image result-slide-image--dirty -->
+              <div class="result-slide-image result-slide-image--clean">
+                <picture>
+                  <img src="./img/result/result-4--clean.png" srcset="" alt="slide-photo">
+                </picture>
+              </div>
+            </div>
+            <!-- /.result-slide-container -->
+            <div class="service-images-banner">
+              <img src="./img/banner-services-page.png" alt="banner">
+            </div>
+            <!-- /.service-images-banner -->
+          </div>
+          <!-- /.service-images -->
+        </div>
+        <!-- /.service-item-wrap -->
+        <div class="service-result">
+          <h3 class="service-result__title">Примеры выполненных работ</h3>
+          <div class="service-result-wrap">
+            <div class="result-slide-container">
+              <div class="result-slide-image result-slide-image--dirty">
+                <picture>
+                  <img src="./img/result/result-4--dirty.png" srcset="" alt="slide-photo">
+                </picture>
+              </div>
+              <!-- /.result-slide-image result-slide-image--dirty -->
+              <div class="result-slide-image result-slide-image--clean">
+                <picture>
+                  <img src="./img/result/result-4--clean.png" srcset="" alt="slide-photo">
+                </picture>
+              </div>
+            </div>
+            <!-- /.result-slide-container -->
+            <div class="result-slide-container">
+              <div class="result-slide-image result-slide-image--dirty">
+                <picture>
+                  <img src="./img/result/result-4--dirty.png" srcset="" alt="slide-photo">
+                </picture>
+              </div>
+              <!-- /.result-slide-image result-slide-image--dirty -->
+              <div class="result-slide-image result-slide-image--clean">
+                <picture>
+                  <img src="./img/result/result-4--clean.png" srcset="" alt="slide-photo">
+                </picture>
+              </div>
+            </div>
+            <!-- /.result-slide-container -->
+          </div>
+          <!-- /.service-result-wrap -->
+          <div class="service-result-slider">
+            <div class="result-slide">
+              <picture>
+                <img src="./img/result/result-before.png" srcset="./img/result/result-before@2x.png" alt="result-photo">
+                <img src="./img/result/result-after.png" srcset="./img/result/result-after@2x.png" alt="result-photo">
+              </picture>
+            </div>
+            <!-- /.result-slide -->
+            <div class="result-slide">
+              <picture>
+                <img src="./img/result/result-before.png" srcset="./img/result/result-before@2x.png" alt="result-photo">
+                <img src="./img/result/result-after.png" srcset="./img/result/result-after@2x.png" alt="result-photo">
+              </picture>
+            </div>
+            <!-- /.result-slide -->
+          </div>
+          <!-- /.service-result-slider -->
+        </div>
+        <!-- /.service-result -->
+      </div>
+      <!-- /.page service-page -->
+    </div>
+    <!-- /.container -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__title">Мы всегда на связи</div>
+      <div class="footer-wrap">
+        <ul id="footer-menu" class="footer-menu">
+          <li class="footer-menu__item"><a href="#">Главная</a></li>
+          <li class="footer-menu__item"><a href="#">Контакты</a></li>
+          <li class="footer-menu__item"><a href="#">Личный кабинет</a></li>
+          <li class="footer-menu__item"><a href="#">Вызов курьера</a></li>
+          <li class="footer-menu__item"><a href="#">Блог</a></li>
+        </ul>
+        <div class="socials">
+          <a href="https://api.whatsapp.com/send?phone=79672441718&amp;text=&amp;source=&amp;data="
+            class="block block-whatsapp" target="_blank">
+            <div class="icon">
+              <svg class="whatsapp">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </div>
+            <div class="name">WhatsApp</div>
+          </a>
+          <a href="https://www.instagram.com/bossclean.ru/" class="block block-instagram" target="_blank">
+            <div class="icon">
+              <svg class="instagram">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </div>
+            <div class="name">Instagram</div>
+          </a>
+          <a href="https://teleg.run/bossclean" class="block block-telegram" target="_blank">
+            <div class="icon">
+              <svg class="telegram">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </div>
+            <div class="name">Telegram</div>
+          </a>
+          <a href="https://www.facebook.com/bosscleanru/" class="block block-facebook" target="_blank">
+            <div class="icon">
+              <div class="facebook-background">
+                <svg class="facebook">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="name">Facebook</div>
+          </a>
+          <a href="https://vk.com/bossclean" class="block block-vk" target="_blank">
+            <div class="icon">
+              <svg class="vk">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </div>
+            <div class="name">Вконтакте</div>
+          </a>
+          <a href="tel:84950057763" class="block block-phone" target="_blank">
+            <div class="icon">
+              <svg class="phone">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="name">8(495)005-77-63</div>
+          </a>
+        </div>
+        <div class="footer-logo">
+          <a href="#" class="icon-logo">
+            <svg class="logo">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <span>Профессиональный обувной сервис</span>
+        </div>
+        <!-- /.footer-logo -->
+      </div>
+      <!-- /.footer-wrap -->
+    </div>
+    <div class="footer-descr">
+      <div class="top-part"> Нажимая на кнопку «<span class="grey">Заказать</span>» и<br>
+        «<span class="grey">Получить консультацию</span>» вы соглашаетесь с <a
+          href="https://bossclean.ru/polzovatelskoe-soglashenie/">пользовательским соглашением</a> и <a
+          href="https://bossclean.ru/privacy-policy/">политикой конфиденциальности</a></div>
+      <div class="bot-part">© 2020 BOSSCLEAN</div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <!-- <script src="./js/materialize.js"></script> -->
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.event.move.js"></script>
+  <script src="./js/jquery.twentytwenty.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+.service
+  &-page
+    &__title
+      @include tablet
+        display: none
+  &-item-wrap
+    margin-bottom: 50px
+    display: flex
+    @include tablet
+      flex-direction: column
+  &-content
+    margin-right: 20px
+    @include tablet
+      margin-right: 0
+    &-wrap
+      margin-bottom: 20px
+      display: flex
+      @include tablet
+        flex-direction: column
+        align-items: center
+    &--mobile__title
+      display: none
+      @include tablet
+        margin-bottom: 45px
+        display: block
+        font-size: 30px
+        +bold
+  &-additional
+    position: relative
+    background-color: $white
+    z-index: 1
+    .services-item
+      &-fast
+        position: relative
+        @include tablet
+          margin: 0 auto
+          max-width: 345px
+        .services-item-wrapper
+          background-color: $white
+          z-index: 2
+          @include tablet
+            margin: 0 auto
+            max-width: 345px
+      &-wrapper
+        @include tablet
+          margin-left: 0
+          margin: 0 auto
+          max-width: 345px
+        @include mobile
+          display: flex
+          align-items: center
+          justify-content: space-between
+        .services-fix
+          display: flex
+          align-items: center
+          justify-content: space-between
+          width: 100%
+          max-width: 270px
+          @include tablet
+            max-width: 39px
+          .service-additional__descr
+            font-size: 16px
+            +reg
+            @include tablet
+              display: none
+        span
+          font-size: 21px
+          line-height: 95.4%
+          +med
+          @include tablet
+            font-size: 16px
+          @include mobile
+            margin-right: 5px
+    .fire
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: -60px
+      max-width: 108px
+      max-height: 108px
+      z-index: -1
+      @include tablet
+        left: -35px
+        max-width: 80px
+        max-height: 80px
+    .fast
+      position: relative
+      display: none
+      &:checked + .fast-label
+        background-color: $purple
+        &:after
+          left: 18px
+      &-label
+        display: block
+        position: relative
+        width: 39px
+        height: 22px
+        background-color: #c9c9c9
+        border-radius: 40px
+        &:after
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 1px
+          width: 19px
+          height: 19px
+          border-radius: 50%
+          background-color: $white
+          transition: $normal
+          cursor: pointer
+    .restoration
+      position: relative
+      display: none
+      &:checked + .restoration-label
+        background-color: $purple
+        &:after
+          left: 18px
+      &-label
+        display: block
+        position: relative
+        width: 39px
+        height: 22px
+        background-color: #c9c9c9
+        border-radius: 40px
+        &:after
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 1px
+          width: 19px
+          height: 19px
+          border-radius: 50%
+          background-color: $white
+          transition: $normal
+          cursor: pointer
+  &-back
+    margin-bottom: 20px
+    width: 100%
+    max-width: 665px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-button
+      width: 100%
+      max-width: 110px
+      padding: 7px 10px 8px 12px
+      display: flex
+      align-items: center
+      background-color: #6146ee
+      color: $white
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04)
+      border-radius: 14.5px
+      .arrow-left
+        margin-right: 15px
+        fill: transparent
+        transform: rotate(180deg)
+        max-width: 9px
+        max-height: 13px
+      span
+        font-size: 15px
+        +med
+  &-descr
+    margin-right: 20px
+    @include tablet
+      margin: 0 0 20px 0
+    &__title
+      margin-bottom: 10px
+      font-size: 22px
+      line-height: 95%
+      @include tablet
+        font-size: 28px
+    &-block
+      max-width: 415px
+      min-height: 440px
+      padding: 20px
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      border-radius: 5px
+      @include tablet
+      text-align: center
+      p
+        margin-bottom: 25px
+        font-size: 18px
+        line-height: 100%
+        &:nth-child(2)
+          margin-bottom: 65px
+      .descr-list
+        list-style: disc
+        &__item
+          margin-left: 15px
+          @include tablet
+            margin-left: 30px
+  &-images
+    @include tablet
+      order: -1
+    .result-slide-container
+      margin-bottom: 60px
+      .result-slide-image--dirty
+        img
+          max-width: 522px
+          min-width: 522px
+          height: 362px
+          @include tablet
+            max-width: 313px
+            min-width: 313px
+            height: 213px
+      .result-slide-image--clean
+        width: 522px
+        @include tablet
+          width: 313px
+        img
+          width: 522px
+          height: 362px
+          @include tablet
+            width: 313px
+            height: 213px
+    &-banner
+      @include tablet
+        display: none
+  &-cost
+    @include tablet
+      width: 100%
+      max-width: 345px
+    &__title
+      margin-bottom: 10px
+      font-size: 22px
+      line-height: 95%
+      @include tablet
+        margin-bottom: 5px
+    &-block
+      margin-bottom: 20px
+      padding: 62px 30px 20px
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      border-radius: 3px
+      @include tablet
+        padding: 62px 20px 20px
+      .cost
+        margin-right: 40px
+        font-size: 33px
+        line-height: 105%
+        &-block__button
+          display: block
+          margin: 40px auto 0
+          width: 100%
+          max-width: 200px
+          padding: 10px 0
+          background-color: $purple
+          color: $white
+          font-size: 12px
+          line-height: 15px
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1)
+          border-radius: 5px
+          +semibold
+      .amount
+        font-size: 22px
+        line-height: 95%
+    .services-item-wrapper
+      span
+        padding: 12px 0 12px 20px
+      &:last-child
+        margin-bottom: 0
+      @include tablet
+        margin: 0 auto
+        max-width: 345px
+      @include mobile
+        margin-left: 0
+      .services-fix
+        position: relative
+        .fix
+          position: relative
+          display: none
+          &:checked + .fix-label
+            background-color: $purple
+            &:after
+              left: 18px
+          &-label
+            display: block
+            position: relative
+            width: 39px
+            height: 22px
+            background-color: #c9c9c9
+            border-radius: 40px
+            &:after
+              content: ''
+              position: absolute
+              top: 50%
+              transform: translateY(-50%)
+              left: 1px
+              width: 19px
+              height: 19px
+              border-radius: 50%
+              background-color: $white
+              transition: $normal
+              cursor: pointer
+
+  &-result
+    &-wrap
+      margin: 50px 0 60px
+      display: flex
+      justify-content: space-between
+    &__title
+      font-size: 43px
+      line-height: 95%
+      @include tablet
+        margin-bottom: 55px
+        font-size: 36px
+      @include mobile-landscape
+        font-size: 28px
+    .slick-dotted.slick-slider
+      margin-bottom: 100px
+    &-slider
+      display: none
+      @media (max-width: 930px)
+        display: block
+        position: relative
+        display: flex
+        justify-content: space-between
+        .slick-list
+          overflow: hidden
+          position: relative
+          display: block
+          margin: 0
+        .slick-track
+          display: flex
+          justify-content: space-between
+        .slick-dots
+          bottom: -42px
+          li
+            margin: 0 15px 0 0
+            width: 75px
+            height: 9px
+            border-radius: 3px
+            background-color: #e6e6e6
+            &:last-child
+              margin-right: 0
+          li.slick-active
+            background-color: #7e7e7e
+      .result-slide
+        picture
+          display: flex
+          align-items: center
+          flex-direction: column
+        img
+          max-width: 295px
+
+
+@media (max-width: 930px)
+  .service-result-wrap
+    display: none

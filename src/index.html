@@ -63,17 +63,35 @@
         </ul>
         <div class="navbar-profile">
           <span class="navbar-profile__text">Профиль</span>
-          <a href="#" class="user-icon" id="user-icon">
+          <div class="user-icon" id="user-icon">
             <svg class="user">
               <use xlink:href="img/sprite.svg#user"></use>
             </svg>
-          </a>
+            <a href="#" class="user-login">Войти</a>
+            <svg class="user-logo">
+              <use xlink:href="img/sprite.svg#user-logo"></use>
+            </svg>
+            <a href="#" class="user-reg">Создать</a>
+          </div>
         </div>
         <!-- /.navbar-profile -->
         <div class="navbar-burger">
           <span class="burger"></span>
         </div>
         <!-- /.navbar-burger -->
+        <div class="navbar-account">
+          <a href="#" class="navbar-account__login">Аккаунт</a>
+          <a href="#" class="navbar-account__exit">Выйти</a>
+          <div class="navbar-account-data">
+            <span class="navbar-account__name">Лох Лоховский</span>
+            <div class="navbar-account-image">
+              <img src="./img/user-photo.png" alt="user-photo">
+            </div>
+            <!-- /.navbar-account-image -->
+          </div>
+          <!-- /.navbar-account-data -->
+        </div>
+        <!-- /.navbar-account -->
       </div>
       <!-- /.navbar-block -->
     </div>
@@ -104,14 +122,31 @@
   <nav class="navbar-mobile">
     <div class="navbar-mobile-top">
       <div class="navbar-profile">
-        <span class="navbar-profile__text">Профиль</span>
-        <a href="#" class="user-icon" id="user-icon">
+        <div class="user-icon" id="user-icon">
+          <a href="#" class="user-login">Войти</a>
+          <svg class="user-logo">
+            <use xlink:href="img/sprite.svg#user-logo"></use>
+          </svg>
+          <a href="#" class="user-reg">Создать</a>
           <svg class="user">
             <use xlink:href="img/sprite.svg#user"></use>
           </svg>
-        </a>
+        </div>
       </div>
       <!-- /.navbar-profile -->
+      <div class="navbar-account">
+        <div class="navbar-account-data">
+          <span class="navbar-account__name">Лох Лоховский</span>
+          <div class="navbar-account-image">
+            <img src="./img/user-photo.png" alt="user-photo">
+          </div>
+          <!-- /.navbar-account-image -->
+        </div>
+        <!-- /.navbar-account-data -->
+        <a href="#" class="navbar-account__login">Аккаунт</a>
+        <a href="#" class="navbar-account__exit">Выйти</a>
+      </div>
+      <!-- /.navbar-account -->
       <div class="navbar-mobile-close">×</div>
     </div>
     <!-- /.navbar-mobile-top -->
@@ -632,6 +667,47 @@
             <!-- /.services-item-buttons -->
           </div>
           <!-- /.services-item -->
+
+
+
+          <!-- Для Влада, то, что я должен получить при запросе, это разметка одной карточки, обёртка карточек мне кажется не нужна, но если нужна, её не сложно добавить
+          <div class="services-item">
+            <h3 class="services-item__title">Химчистка Top</h3>
+            <span class="services-item__descr">Лёгкая спортивная обувь из текстиля</span>
+            <div class="services-item-wrapper">
+              <span>Сроки выполнения</span>
+              <div class="services-item-days">
+                <span class="services-item-days__amount">2</span>
+                <span class="services-item-days__text">дня</span>
+                <svg class="circle">
+                  <use xlink:href="img/sprite.svg#circle2"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="services-item-wrapper">
+              <span>Бесплатная доставка</span>
+              <svg class="delivery">
+                <use xlink:href="img/sprite.svg#delivery"></use>
+              </svg>
+            </div>
+            <div class="services-item-wrapper">
+              <span>Гарантия качества</span>
+              <svg class="sneaker">
+                <use xlink:href="img/sprite.svg#sneaker"></use>
+              </svg>
+            </div>
+            <div class="services-item-price">
+              <span class="price">1.500₽</span>
+              <span class="amount">за пару</span>
+            </div>
+            <div class="services-item-buttons">
+              <button class="button button-courier">ВЫЗВАТЬ КУРЬЕРА</button>
+              <button class="button button-more">ПОДРОБНЕЕ</button>
+            </div>
+          </div> -->
+
+
+
         </div>
         <!-- /.services-wrap -->
         <div class="services-change">

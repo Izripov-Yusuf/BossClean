@@ -3,6 +3,8 @@
   //position: fixed
   //width: 100%
   //z-index: 111
+  @include mobile-landscape
+    padding: 20px 0
   &-block
     display: flex
     align-items: center
@@ -43,9 +45,43 @@
     align-items: center
     @include tablet
       display: none
+    &--active
+      flex-direction: column
+      .navbar-profile__text
+        margin-right: 0
+        margin-bottom: 3px
+      .user
+        width: 0
+        height: 0
+        overflow: hidden
+        transition: $normal
+        &-login, &-logo, &-reg
+          width: auto !important
+          height: auto !important
+          transition: $normal
+        &-login, &-reg
+          font-size: 11px
+          color: $black
+          +med
+        &-logo
+          max-width: 20px
+          max-height: 10px
+          transition: $normal
+        &-icon
+          margin-bottom: 16px
+          padding: 15px
+          width: 200px !important
+          justify-content: space-between !important
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04) !important
+          border-radius: 38px !important
+          &:hover
+            transform: scale(1) !important
+          @include mobile
+            width: 160px !important
     .user
       max-width: 11px
       max-height: 16px
+      transition: $normal
       &-icon
         display: flex
         align-items: center
@@ -56,8 +92,14 @@
         background: linear-gradient(0deg, #FFFFFF, #FFFFFF)
         box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(97, 70, 238, 0.13)
         transition: $normal
+        cursor: pointer
         &:hover
-          transform: scale(1.2);
+          transform: scale(1.2)
+      &-login, &-logo, &-reg
+        width: 0
+        height: 0
+        overflow: hidden
+        transition: $normal
     &__text
       display: inline-block
       margin-right: 15px
@@ -117,8 +159,7 @@
     .navbar-profile, .navbar-menu
       display: block !important
     .navbar-profile
-      &__text
-        display: none
+      margin-top: 8px
     .navbar-menu
       li
         margin-bottom: 10px
@@ -138,9 +179,31 @@
       cursor: pointer
     &-top
       margin-bottom: 30px
+      padding-right: 15px
       display: flex
-      align-items: center
       justify-content: space-between
+      @include mobile-landscape
+        padding-right: 0
+      .user-icon
+        margin-bottom: 0 !important
+      .navbar
+        &-account
+          margin: 10px 0 0
+          &-data
+            max-width: 180px
+          &__name
+            margin: 12px 5px 12px 10px
+            font-size: 15px
+            @include mobile
+              margin: 12px 5px 12px 10px
+              font-size: 13px
+          &__login, &__exit
+            margin-bottom: 0
+            margin-top: 13px
+          &__login
+            margin: 0 65px 0 12px
+            @include mobile-landscape
+              margin: 0 45px 0 12px
     .socials
       display: flex
       flex-direction: column
@@ -226,6 +289,41 @@
               text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13)
               font-size: 16px
               +med
+  &-account
+    display: none
+    margin-bottom: 20px
+    &__login, &__exit
+      display: inline-block
+      margin-bottom: 3px
+      font-size: 13px
+      color: #999
+    &__login
+      margin: 0 65px 0 15px
+    &__name
+      margin: 12px 12px 12px 15px
+      font-size: 16px
+      +semibold
+    &-data
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      max-width: 200px
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)
+      border-radius: 38px
+    &-image
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 42px
+      height: 42px
+      background: rgb(237, 47, 160)
+      background: linear-gradient(77deg, rgb(237, 47, 160) 0%, rgb(254, 123, 55) 100%)
+      border-radius: 48%
+      img
+        margin: 0.5px 0 0 0.4px
+        width: 40px
+        border-radius: 50%
 
   &-fixed
     position: fixed
